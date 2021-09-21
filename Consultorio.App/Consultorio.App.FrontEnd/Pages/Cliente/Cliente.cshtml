@@ -14,6 +14,7 @@
     <th scope="col">Direccion</th>
     <th scope="col">Telefono</th>
     <th scope="col">Genero</th>
+    <th scope="col">Acciones</th>
 </tr>
 @foreach(var cliente in Model.clientes){
 <tr>
@@ -26,6 +27,7 @@
     <td>@cliente.Direccion</td>
     <td>@cliente.Telefono</td>
     <td>@cliente.Genero</td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Cliente/DetalleCliente" asp-route-documento="@cliente.Documento">Detalle</a> </td>
 </tr>
 }    
 </table>
