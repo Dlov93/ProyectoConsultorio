@@ -12,7 +12,7 @@ namespace Consultorio.App.Consola
 {
     class Program
     {
-        private static IRepositorioCliente _repoCliente = new RepositorioCliente(new Persistencia.AppContext());
+        private static IRepositorioCliente _repoCliente = new RepositorioCliente(new Persistencia.AppContexto());
         static void Main(string[] args)
         {
             Console.WriteLine("ingrese el documento que desea gestionar:");
@@ -20,7 +20,7 @@ namespace Consultorio.App.Consola
            AddCliente();
            //BuscarCliente(Documento);
            //BorrarCliente(Documento);
-           ActualizarCliente(Documento); 
+           //ActualizarCliente(Documento); 
            
         }
         private static void AddCliente(){

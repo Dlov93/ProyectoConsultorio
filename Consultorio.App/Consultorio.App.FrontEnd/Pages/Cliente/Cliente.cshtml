@@ -2,3 +2,30 @@
 @model MyApp.Namespace.ClienteModel
 @{
 }
+<h1>Listar Clientes</h1>
+<table class=" table table-info table-bordered table-striped" >
+<tr>
+    <th scope="col">Documento</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">FechaNacimiento</th>
+    <th scope="col">Ciudad</th>
+    <th scope="col">Correo</th>
+    <th scope="col">Direccion</th>
+    <th scope="col">Telefono</th>
+    <th scope="col">Genero</th>
+</tr>
+@foreach(var cliente in Model.clientes){
+<tr>
+    <td>@cliente.Documento</td>
+    <td>@cliente.Nombre</td>
+    <td>@cliente.Apellido</td>
+    <td>@cliente.FechaNacimiento</td>
+    <td>@cliente.Ciudad</td>
+    <td>@cliente.Correo</td>
+    <td>@cliente.Direccion</td>
+    <td>@cliente.Telefono</td>
+    <td>@cliente.Genero</td>
+</tr>
+}    
+</table>
