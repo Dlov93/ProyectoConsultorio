@@ -6,9 +6,9 @@ using Consultorio.App.Dominio;
 namespace Consultorio.App.Persistencia{
     
     public class RepositorioAuxiliar : IRepositorioAuxiliar{
-        private readonly AppContext _appContext;
+        private readonly AppContexto _appContext;
         
-        public RepositorioAuxiliar(AppContext appContext){
+        public RepositorioAuxiliar(AppContexto appContext){
             _appContext=appContext;
         }
         Auxiliar IRepositorioAuxiliar.AddAuxiliar(Auxiliar auxiliar){

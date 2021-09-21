@@ -6,9 +6,9 @@ using Consultorio.App.Dominio;
 namespace Consultorio.App.Persistencia{
     
     public class RepositorioMedico : IRepositorioMedico{
-        private readonly AppContext _appContext;
+        private readonly AppContexto _appContext;
         
-        public RepositorioMedico(AppContext appContext){
+        public RepositorioMedico(AppContexto appContext){
             _appContext=appContext;
         }
         Medico IRepositorioMedico.AddMedico(Medico medico){

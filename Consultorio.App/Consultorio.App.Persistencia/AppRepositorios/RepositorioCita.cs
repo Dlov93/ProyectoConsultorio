@@ -6,9 +6,9 @@ using Consultorio.App.Dominio;
 namespace Consultorio.App.Persistencia{
     
     public class RepositorioCita : IRepositorioCita{
-        private readonly AppContext _appContext;
+        private readonly AppContexto _appContext;
         
-        public RepositorioCita(AppContext appContext){
+        public RepositorioCita(AppContexto appContext){
             _appContext=appContext;
         }
         Cita IRepositorioCita.AddCita(Cita cita){

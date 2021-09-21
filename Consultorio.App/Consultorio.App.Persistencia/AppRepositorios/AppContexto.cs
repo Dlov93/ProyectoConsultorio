@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Consultorio.App.Dominio;
 
 namespace Consultorio.App.Persistencia {
-    public class AppContext : DbContext{
+    public class AppContexto : DbContext{
         public DbSet<Persona> persona{get; set;}
         public DbSet<Cliente> cliente{get; set;}
         public DbSet<Medico> medico{get; set;}

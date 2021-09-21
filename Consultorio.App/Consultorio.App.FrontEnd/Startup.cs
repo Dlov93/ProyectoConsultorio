@@ -1,3 +1,4 @@
+using System.Net.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Consultorio.App.Persistencia;
+
 
 namespace Consultorio.App.FrontEnd
 {
@@ -24,6 +27,10 @@ namespace Consultorio.App.FrontEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IRepositorioCliente>(new RepositorioCliente(new AppContexto()));
+            services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new AppContexto()));
+            services.AddSingleton<IRepositorioAuxiliar>(new RepositorioAuxiliar(new AppContexto()));
+            services.AddSingleton<IRepositorioCita>(new RepositorioAuxiliar(new AppContexto()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
