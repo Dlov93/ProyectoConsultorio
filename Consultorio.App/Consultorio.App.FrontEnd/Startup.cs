@@ -30,7 +30,7 @@ namespace Consultorio.App.FrontEnd
             services.AddSingleton<IRepositorioCliente>(new RepositorioCliente(new AppContexto()));
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new AppContexto()));
             services.AddSingleton<IRepositorioAuxiliar>(new RepositorioAuxiliar(new AppContexto()));
-            services.AddSingleton<IRepositorioCita>(new RepositorioAuxiliar(new AppContexto()));
+            services.AddSingleton<IRepositorioCita>(new RepositorioCita(new AppContexto()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
