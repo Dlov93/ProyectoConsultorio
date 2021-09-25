@@ -83,3 +83,4 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\DetalleCliente.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EditarCliente.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\CrearCliente.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EliminarCliente.cshtml.g.cs
