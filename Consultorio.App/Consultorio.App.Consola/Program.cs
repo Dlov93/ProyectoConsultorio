@@ -17,7 +17,7 @@ namespace Consultorio.App.Consola
         {
             Console.WriteLine("ingrese el documento que desea gestionar:");
             string Documento=Console.ReadLine();
-           AddCliente();
+           //AddCliente();
            //BuscarCliente(Documento);
            //BorrarCliente(Documento);
            //ActualizarCliente(Documento); 
