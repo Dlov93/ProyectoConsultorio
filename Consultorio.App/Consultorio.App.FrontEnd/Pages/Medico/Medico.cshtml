@@ -1,0 +1,37 @@
+﻿@page
+@model MyApp.Namespace.MedicoModel
+@{
+}
+<h1>Listar Médicos</h1>
+<a class="btn btn-primary table-btn" asp-page="../Medico/CrearMedico">Agregar Médico</a> 
+<table class=" table table-info table-bordered table-striped" >
+<tr>
+    <th scope="col">Documento</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">Telefono</th>
+    <th scope="col">Genero</th>
+    <th scope="col">Especialidad</th>
+    <th scope="col">Codigo</th>
+    <th scope="col">RegistroRethus</th>
+    <th scope="col">Horario</th>
+
+</tr>
+@foreach(var medico in Model.medicos){
+<tr>
+    <td>@medico.Documento</td>
+    <td>@medico.Nombre</td>
+    <td>@medico.Apellido</td>
+    <td>@medico.Telefono</td>
+    <td>@medico.Genero</td>
+    <td>@medico.Especialidad</td>
+    <td>@medico.Codigo</td>
+    <td>@medico.RegistroRethus</td>
+    <td>@medico.Horario</td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Medico/DetalleMedico" asp-route-documento="@medico.Documento">Detalle</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Medico/EditarMedico" asp-route-documento="@medico.Documento">Editar</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Medico/BorrarMedico" asp-route-documento="@medico.Documento">Borrar</a> </td>
+    
+</tr>
+}    
+</table>
