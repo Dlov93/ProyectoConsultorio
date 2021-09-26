@@ -23,13 +23,13 @@ namespace MyApp.Namespace
             cliente=repositorioCliente.GetCliente(Documento);
         }
         public IActionResult OnPost(string Documento){
-            try{
+           // try{
                 repositorioCliente.DeleteCliente(Documento);
                 return RedirectToPage("./Cliente");
-            }
-            catch{
-                return RedirectToPage("../Error");
-            }
+           // }
+           // catch{
+            //    return RedirectToPage("../Error");
+            //}
         }
     }
 }
