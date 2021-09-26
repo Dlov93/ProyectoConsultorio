@@ -84,6 +84,10 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EditarCliente.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\CrearCliente.cshtml.g.cs
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9
 C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Consultorio.App.FrontEnd.exe
@@ -180,6 +184,10 @@ C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consul
 =======
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EliminarCliente.cshtml.g.cs
 >>>>>>> 9be4bcc9e77893721c36ff3e3c102d7104f089ed
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.json
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -280,8 +288,11 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\EditarMedico.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\Medico.cshtml.g.cs
 >>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
+<<<<<<< HEAD
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Auxiliar\Auxiliar.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Auxiliar\CrearAuxiliar.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Auxiliar\DetalleAuxiliar.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Auxiliar\EditarAuxiliar.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Auxiliar\EliminarAuxiliar.cshtml.g.cs
+=======
+>>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9

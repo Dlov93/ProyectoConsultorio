@@ -4,14 +4,21 @@ using Consultorio.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-    partial class AppContextoModelSnapshot : ModelSnapshot
+<<<<<<< HEAD:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210926130857_A.Designer.cs
+    [Migration("20210926130857_A")]
+    partial class A
+=======
+    [Migration("20210925170501_Inicial0")]
+    partial class Inicial0
+>>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210925170501_Inicial0.Designer.cs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,7 +109,6 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
-<<<<<<< HEAD
                     b.Property<int?>("ClienteID")
                         .HasColumnType("int");
 
@@ -116,27 +122,6 @@ namespace Consultorio.App.Persistencia.Migrations
 
                     b.HasIndex("MedicoID");
 
-=======
-<<<<<<< HEAD
-                    b.Property<int?>("ClienteID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CodigoA")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MedicoID")
-                        .HasColumnType("int");
-
-                    b.HasIndex("ClienteID");
-
-                    b.HasIndex("MedicoID");
-
-=======
-                    b.Property<string>("CodigoA")
-                        .HasColumnType("nvarchar(max)");
-
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
->>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9
                     b.HasDiscriminator().HasValue("Auxiliar");
                 });
 
@@ -201,10 +186,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("medico");
                 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9
             modelBuilder.Entity("Consultorio.App.Dominio.Auxiliar", b =>
                 {
                     b.HasOne("Consultorio.App.Dominio.Cliente", "Cliente")
@@ -220,11 +201,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("Medico");
                 });
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
->>>>>>> ac25a9f405d06cd4e659fdd633a7858fd9fb5fb9
             modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>
                 {
                     b.HasOne("Consultorio.App.Dominio.Horario", "Horario")
