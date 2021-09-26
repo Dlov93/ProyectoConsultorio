@@ -6,32 +6,32 @@ using Consultorio.App.Dominio;
 namespace Consultorio.App.Persistencia{
     
     public class RepositorioCliente : IRepositorioCliente{
-        private readonly AppContexto _appContext;
+        private readonly AppContexto _appContexto;
         
-        public RepositorioCliente(AppContexto appContext){
-            _appContext=appContext;
+        public RepositorioCliente(AppContexto appContexto){
+            _appContexto=appContexto;
         }
         Cliente IRepositorioCliente.AddCliente(Cliente cliente){
-            var clienteAdicionado= _appContext.cliente.Add(cliente);
-            _appContext.SaveChanges();
+            var clienteAdicionado= _appContexto.cliente.Add(cliente);
+            _appContexto.SaveChanges();
             return clienteAdicionado.Entity;
         }
         void IRepositorioCliente.DeleteCliente(string Documento){
-            var clienteEncontrado= _appContext.cliente.FirstOrDefault(c => c.Documento==Documento);
+            var clienteEncontrado= _appContexto.cliente.FirstOrDefault(c => c.Documento==Documento);
             if(clienteEncontrado==null){
             return;
             }
-            _appContext.cliente.Remove(clienteEncontrado);
-            _appContext.SaveChanges();
+            _appContexto.cliente.Remove(clienteEncontrado);
+            _appContexto.SaveChanges();
         }
         IEnumerable<Cliente> IRepositorioCliente.GetAllCliente(){
-            return _appContext.cliente;
+            return _appContexto.cliente;
         }
         Cliente IRepositorioCliente.GetCliente(string Documento){
-            return _appContext.cliente.FirstOrDefault(c => c.Documento==Documento);
+            return _appContexto.cliente.FirstOrDefault(c => c.Documento==Documento);
         }
         Cliente IRepositorioCliente.UpdateCliente(Cliente cliente){
-            var clienteEncontrado=_appContext.cliente.FirstOrDefault(c => c.Documento==cliente.Documento);
+            var clienteEncontrado=_appContexto.cliente.FirstOrDefault(c => c.Documento==cliente.Documento);
             if(clienteEncontrado!=null){
                 clienteEncontrado.Nombre=cliente.Nombre;
                 clienteEncontrado.Apellido=cliente.Apellido;
@@ -41,7 +41,7 @@ namespace Consultorio.App.Persistencia{
                 clienteEncontrado.Direccion= cliente.Direccion;
                 clienteEncontrado.Correo= cliente.Correo;
                 clienteEncontrado.FechaNacimiento= cliente.FechaNacimiento;
-                _appContext.SaveChanges();
+                _appContexto.SaveChanges();
             }
             return clienteEncontrado;
 
