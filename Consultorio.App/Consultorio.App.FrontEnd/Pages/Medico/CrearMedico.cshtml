@@ -1,0 +1,51 @@
+﻿@page
+@model MyApp.Namespace.CrearMedicoModel
+@{
+}
+@using Consultorio.App.Dominio
+<form method="post" class="mt-3">
+    <input hidden asp-for="medico.ID"/>
+    <div class="form-group row">
+        <label asp-for="medico.Documento" class="col-sm-2"></label>
+        <input asp-for="medico.Documento" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Nombre" class="col-sm-2"></label>
+        <input asp-for="medico.Nombre" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Apellido" class="col-sm-2"></label>
+        <input asp-for="medico.Apellido" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Telefono" class="col-sm-2"></label>
+        <input asp-for="medico.Telefono" class="form-control">
+    </div>
+     <div class="form-group row">
+        <label asp-for="medico.Genero" class="col-sm-2"></label>
+        <div class="col-sm-10">
+            <select asp-for="medico.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>
+            <option value="-"></option>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Especialidad" class="col-sm-2"></label>
+        <input asp-for="medico.Especialidad" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Codigo" class="col-sm-2"></label>
+        <input asp-for="medico.Codigo" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.RegistroRethus" class="col-sm-2"></label>
+        <input asp-for="medico.RegistroRethus" class="form-control">
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Horario" class="col-sm-2"></label>
+        <input asp-for="medico.Horario" class="form-control">
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">Agregar</button>
+        <a asp-page="./Medico" class="btn btn-primary">Cancelar</a>
+    </div>
+</form>

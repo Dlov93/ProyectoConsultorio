@@ -4,16 +4,14 @@ using Consultorio.App.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    [DbContext(typeof(AppContext))]
-    [Migration("20210920224626_a")]
-    partial class a
+    [DbContext(typeof(AppContexto))]
+    partial class AppContextoModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
