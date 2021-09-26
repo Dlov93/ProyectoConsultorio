@@ -83,6 +83,7 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\DetalleCliente.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EditarCliente.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\CrearCliente.cshtml.g.cs
+<<<<<<< HEAD
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.json
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -175,3 +176,6 @@ C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\net
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\EditarMedico.cshtml.g.cs
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\Medico.cshtml.g.cs
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\BorrarMedico.cshtml.g.cs
+=======
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EliminarCliente.cshtml.g.cs
+>>>>>>> 9be4bcc9e77893721c36ff3e3c102d7104f089ed
