@@ -1,0 +1,34 @@
+@page
+@model MyApp.Namespace.AuxiliarModel
+@{
+}
+<h1>Listar Auxiliar</h1>
+<a class="btn btn-primary table-btn" asp-page="../Auxiliar/CrearAuxiliar">Agregar Auxiliar</a> 
+<table class=" table table-info table-bordered table-striped" >
+<tr>
+    <th scope="col">CodigoA</th>
+    <th scope="col">Medico</th>
+    <th scope="col">Cliente</th>
+    <th scope="col">Documento</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">Telefono</th>
+    <th scope="col">Genero</th>
+    
+</tr>
+@foreach(var auxiliar in Model.auxiliar){
+<tr>
+    <td>@auxiliar.CodigoA</td>
+    <td>@auxiliar.Medico</td>
+    <td>@auxiliar.Cliente</td>
+    <td>@auxiliar.Documento</td>
+    <td>@auxiliar.Nombre</td>
+    <td>@auxiliar.Apellido</td>
+    <td>@auxiliar.Telefono</td>
+    <td>@auxiliar.Genero</td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/DetalleCita" asp-route-documento="@auxiliar.Documento">Detalle</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/EditarCita" asp-route-documento="@auxiliar.Documento">Editar</a> </td>
+    
+</tr>
+}    
+</table>

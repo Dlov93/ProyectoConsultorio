@@ -10,3 +10,16 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CopyComplete
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.deps.json
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
