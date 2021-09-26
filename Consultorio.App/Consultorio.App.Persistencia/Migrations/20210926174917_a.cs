@@ -3,11 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-<<<<<<< HEAD:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210926130857_A.cs
-    public partial class A : Migration
-=======
-    public partial class Inicial0 : Migration
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210925170501_Inicial0.cs
+    public partial class a : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
