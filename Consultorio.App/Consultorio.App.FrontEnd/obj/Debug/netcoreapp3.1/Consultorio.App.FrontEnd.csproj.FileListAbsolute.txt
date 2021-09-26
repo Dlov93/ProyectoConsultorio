@@ -179,3 +179,10 @@ C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\net
 =======
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cliente\EliminarCliente.cshtml.g.cs
 >>>>>>> 9be4bcc9e77893721c36ff3e3c102d7104f089ed
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\BorrarMedico.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\CrearMedico.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\DetalleMedico.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\EditarMedico.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\Medico.cshtml.g.cs

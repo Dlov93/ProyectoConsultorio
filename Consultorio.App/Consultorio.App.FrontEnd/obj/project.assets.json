@@ -5796,19 +5796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gilbe\\.nuget\\packages\\": {}
+    "C:\\Users\\Diana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\c#\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
       "projectName": "Consultorio.App.FrontEnd",
-      "projectPath": "C:\\c#\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\gilbe\\.nuget\\packages\\",
-      "outputPath": "C:\\c#\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\obj\\",
+      "projectPath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\Diana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gilbe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Diana\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5819,8 +5819,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\c#\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
-              "projectPath": "C:\\c#\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj"
+            "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj"
             }
           }
         }
@@ -5859,7 +5859,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }
