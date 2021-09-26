@@ -5,7 +5,7 @@
 <h1>Confirmacion</h1>
 <p>¿Realmente Deseas Eliminar El Cliente @Model.cliente.Nombre? </p>
 <from method="post" class="mt-3">
-    <input Hidden asp-for="Documento">
+    <input Hidden asp-for="cliente.Documento" class="form-control">
     <div class="form-group row">
         <button type="submit" class="btn btn-primary">si</button>
         <a asp-page="./Cliente" class="btn btn-primary">no</a>

@@ -19,7 +19,7 @@ namespace MyApp.Namespace
         }
         public void OnGet(string Documento)
         {
-            this.Documento =Documento;
+            this.Documento = Documento;
             this.cliente=repositorioCliente.GetCliente(Documento);
         }
         public IActionResult OnPost(string Documento){
