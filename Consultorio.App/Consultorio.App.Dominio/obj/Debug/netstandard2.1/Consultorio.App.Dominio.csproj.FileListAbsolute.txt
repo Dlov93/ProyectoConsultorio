@@ -7,6 +7,18 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+<<<<<<< HEAD
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.deps.json
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\ASUS\OneDrive\Escritorio\U\ProyectoConsultorio-1\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+=======
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.deps.json
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
@@ -16,3 +28,4 @@ C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\nets
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.CoreCompileInputs.cache
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+>>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467

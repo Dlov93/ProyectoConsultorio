@@ -8,6 +8,8 @@ namespace Consultorio.App.Persistencia{
         Auxiliar UpdateAuxiliar(Auxiliar auxiliar);
         void DeleteAuxiliar(string Documento);
         Auxiliar GetAuxiliar(string Documento);
+
+        
     }
     
         
