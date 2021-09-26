@@ -5834,7 +5834,10 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+<<<<<<< HEAD
         "targetAlias": "netcoreapp3.1",
+=======
+>>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
