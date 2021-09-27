@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Consultorio.App.Dominio;
 using Consultorio.App.Persistencia;
 
+
 namespace MyApp.Namespace
 {
     public class AuxiliarModel : PageModel

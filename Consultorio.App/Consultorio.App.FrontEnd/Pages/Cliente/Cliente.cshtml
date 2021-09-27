@@ -2,9 +2,9 @@
 @model MyApp.Namespace.ClienteModel
 @{
 }
+@using Consultorio.App.Dominio;
 <h1>Listar Clientes</h1>
 <a class="btn btn-primary table-btn" asp-page="../Cliente/CrearCliente">Agregar Cliente</a> 
- 
 <table class=" table table-info table-bordered table-striped" >
 <tr>
     <th scope="col">Documento</th>
@@ -31,7 +31,7 @@
     <td>@cliente.Genero</td>
     <td><a class="btn btn-primary table-btn" asp-page="../Cliente/DetalleCliente" asp-route-documento="@cliente.Documento">Detalle</a> </td>
     <td><a class="btn btn-primary table-btn" asp-page="../Cliente/EditarCliente" asp-route-documento="@cliente.Documento">Editar</a> </td>
-    <td><a class="btn btn-primary table-btn" asp-page="../Cliente/EliminarCliente" asp-route-documento="@cliente.Documento">Eliminar</a></td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Cliente/EliminarCliente" asp-route-documento="@cliente.Documento">Eliminar</a> </td>
 </tr>
 }    
 </table>

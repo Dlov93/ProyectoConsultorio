@@ -102,18 +102,8 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
-                    b.Property<int?>("ClienteID")
-                        .HasColumnType("int");
-
                     b.Property<string>("CodigoA")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MedicoID")
-                        .HasColumnType("int");
-
-                    b.HasIndex("ClienteID");
-
-                    b.HasIndex("MedicoID");
 
                     b.HasDiscriminator().HasValue("Auxiliar");
                 });
@@ -177,21 +167,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("cliente");
 
                     b.Navigation("medico");
-                });
-
-            modelBuilder.Entity("Consultorio.App.Dominio.Auxiliar", b =>
-                {
-                    b.HasOne("Consultorio.App.Dominio.Cliente", "Cliente")
-                        .WithMany()
-                        .HasForeignKey("ClienteID");
-
-                    b.HasOne("Consultorio.App.Dominio.Medico", "Medico")
-                        .WithMany()
-                        .HasForeignKey("MedicoID");
-
-                    b.Navigation("Cliente");
-
-                    b.Navigation("Medico");
                 });
 
             modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>

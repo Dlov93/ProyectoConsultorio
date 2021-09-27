@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    public partial class abc : Migration
+    public partial class n : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,8 +33,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     Genero = table.Column<int>(type: "int", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CodigoA = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    MedicoID = table.Column<int>(type: "int", nullable: true),
-                    ClienteID = table.Column<int>(type: "int", nullable: true),
                     Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Correo = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -51,18 +49,6 @@ namespace Consultorio.App.Persistencia.Migrations
                         name: "FK_persona_horario_HorarioID",
                         column: x => x.HorarioID,
                         principalTable: "horario",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_persona_persona_ClienteID",
-                        column: x => x.ClienteID,
-                        principalTable: "persona",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_persona_persona_MedicoID",
-                        column: x => x.MedicoID,
-                        principalTable: "persona",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -116,11 +102,6 @@ namespace Consultorio.App.Persistencia.Migrations
                 column: "medicoID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_persona_ClienteID",
-                table: "persona",
-                column: "ClienteID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_persona_Documento",
                 table: "persona",
                 column: "Documento",
@@ -131,11 +112,6 @@ namespace Consultorio.App.Persistencia.Migrations
                 name: "IX_persona_HorarioID",
                 table: "persona",
                 column: "HorarioID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_persona_MedicoID",
-                table: "persona",
-                column: "MedicoID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
