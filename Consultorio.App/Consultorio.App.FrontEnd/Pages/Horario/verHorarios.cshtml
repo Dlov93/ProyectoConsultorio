@@ -1,0 +1,21 @@
+﻿@page
+@model MyApp.Namespace.verHorariosModel
+@{
+}
+@using Consultorio.App.Dominio;
+<h1>Listar Horarios</h1>
+<a class="btn btn-primary table-btn" asp-page="../Horario/AgregarHorario">Agregar Horario</a> 
+<table class=" table table-info table-bordered table-striped" >
+<tr>
+    <th scope="col">Fecha Disponible</th>
+    <th scope="col">Acciones</th>
+</tr>
+@foreach(var horario in Model.horario){
+<tr>
+    <td>@horario.FechaDisponible</td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Horario/verHorarios">Detalle</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Horario/verHorarios" >Editar</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Horario/verHorarios">Eliminar</a> </td>
+</tr>
+}    
+</table>
