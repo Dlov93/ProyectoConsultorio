@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "grDIv0beoVm2/P/1IxdSTfiwMEdc/iaUJhssF0y70ecfd3hobMjX6gWixis5n3mt/NR3aR/ev6uFsxoLSKOPUg==",
+  "dgSpecHash": "cZ/Q8l/EZfQMlOxXlp6dKzaXmnuTb4r1umDW+gFlRka2NounXCM7FyvIY7ndW0giQpxLb2hdwCHbeJrR/98oJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
   "expectedPackageFiles": [
@@ -101,12 +101,5 @@
     "C:\\Users\\Diana\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Diana\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

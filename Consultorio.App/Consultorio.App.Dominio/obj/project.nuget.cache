@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2yo99NbPiyZ9fet3Fs1C8TMCzKC1tYhyuVddQYNpkfwMpP30Y7Y4SNXEEMwrC0oLXFXaesYhBBiiVsAjit0zZA==",
+  "dgSpecHash": "t0ODnTf8+0LzaKn5GkmcchmJzXfSahVo1EqvAkqBR+LFoOVlYwkubiEuW766zcBWmYSWt5duDxE3/PF83ro+mA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Diana\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -20,6 +20,9 @@ namespace MyApp.Namespace
             cliente= repositorioCliente.GetCliente(Documento);
         }
         public IActionResult OnPost(Cliente cliente){
+            if(!ModelState.IsValid){
+                return Page();
+            }
             repositorioCliente.UpdateCliente(cliente);
             return RedirectToPage("./Cliente");
 

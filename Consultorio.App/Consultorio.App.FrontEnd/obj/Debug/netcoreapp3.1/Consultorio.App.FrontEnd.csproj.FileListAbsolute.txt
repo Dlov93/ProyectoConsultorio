@@ -289,3 +289,4 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 >>>>>>> parent of 3248882 (eliminar)
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\AgregarHorario.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\verHorarios.cshtml.g.cs
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cita\CitasAgendadas.cshtml.g.cs
