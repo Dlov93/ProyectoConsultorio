@@ -33,26 +33,10 @@ namespace Consultorio.App.Persistencia{
         Cita IRepositorioCita.UpdateCita(Cita cita){
             var citaEncontrada=_appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento==cita.cliente.Documento);
             if(citaEncontrada!=null){
-                citaEncontrada.cliente.Nombre=cita.cliente.Nombre;
-                citaEncontrada.cliente.Apellido=cita.cliente.Apellido;
-                citaEncontrada.cliente.Genero = cita.cliente.Genero;
-                citaEncontrada.cliente.Telefono=cita.cliente.Telefono;
-                citaEncontrada.cliente.Ciudad= cita.cliente.Ciudad;
-                citaEncontrada.cliente.Direccion= cita.cliente.Direccion;
-                citaEncontrada.cliente.Correo= cita.cliente.Correo;
-                citaEncontrada.cliente.FechaNacimiento= cita.cliente.FechaNacimiento;
-                citaEncontrada.medico.Nombre=cita.medico.Nombre;
-                citaEncontrada.medico.Apellido=cita.medico.Apellido;
-                citaEncontrada.medico.Genero = cita.medico.Genero;
-                citaEncontrada.medico.Telefono=cita.medico.Telefono;
-                citaEncontrada.medico.Codigo= cita.medico.Codigo;
-                citaEncontrada.medico.RegistroRethus = cita.medico.RegistroRethus ;
-                citaEncontrada.medico.Horario= cita.medico.Horario;
-                citaEncontrada.auxiliar.Nombre=cita.auxiliar.Nombre;
-                citaEncontrada.auxiliar.Apellido=cita.auxiliar.Apellido;
-                citaEncontrada.auxiliar.Genero = cita.auxiliar.Genero;
-                citaEncontrada.auxiliar.Telefono=cita.auxiliar.Telefono;
-                citaEncontrada.auxiliar.CodigoA= cita.auxiliar.CodigoA;
+                citaEncontrada.cliente=cita.cliente;
+                citaEncontrada.medico=cita.medico;
+                citaEncontrada.auxiliar=cita.auxiliar;
+                //citaEncontrada.medico.Horario=cita.medico.Horario;
                 _appContexto.SaveChanges();
             }
             return citaEncontrada;

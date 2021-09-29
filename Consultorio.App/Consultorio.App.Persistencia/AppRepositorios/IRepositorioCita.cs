@@ -10,5 +10,5 @@ namespace Consultorio.App.Persistencia{
         Cita GetCita(string Documento);
     }
     
-        
+                     
     }

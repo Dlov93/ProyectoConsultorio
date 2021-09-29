@@ -289,6 +289,7 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 >>>>>>> parent of 3248882 (eliminar)
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\AgregarHorario.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\verHorarios.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -392,3 +393,6 @@ C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Co
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\CrearHorario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\DetalleHorario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Horario\EditarHorario.cshtml.g.cs
+=======
+C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cita\CitasAgendadas.cshtml.g.cs
+>>>>>>> 5b51a999d9b32458bb9e6200766ab91edb2c2bb7

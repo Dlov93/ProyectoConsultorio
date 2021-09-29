@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xfqQnuntB4ITHi9D02lczmaxo+LIInk9TwTLUoVcw7qfs/Ns1uobunSO2vcEMv3xGeo7Rmodtar97YPq04OP0w==",
+=======
+  "dgSpecHash": "cZ/Q8l/EZfQMlOxXlp6dKzaXmnuTb4r1umDW+gFlRka2NounXCM7FyvIY7ndW0giQpxLb2hdwCHbeJrR/98oJg==",
+>>>>>>> 5b51a999d9b32458bb9e6200766ab91edb2c2bb7
   "success": true,
   "projectFilePath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
   "expectedPackageFiles": [

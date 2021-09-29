@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Vk9ht8JPjQTD7kR2LqX/iRF9q2iAowjAjpnNvLN7rvqxl2lpCLF/pczcK4oznd9RbyZoWjRpt7s4ny2otvNNXA==",
+=======
+  "dgSpecHash": "7T6Qj/EpG0m65xYjdAbR+WlZjhodoVkfJBkG6UjY8xv8vg8K3Fs3Xr4RChVeJE0leEzxb1lyayJ2tfX+50PDkQ==",
+>>>>>>> 5b51a999d9b32458bb9e6200766ab91edb2c2bb7
   "success": true,
   "projectFilePath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
   "expectedPackageFiles": [
