@@ -1,4 +1,3 @@
-using System.Xml.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +9,16 @@ using Consultorio.App.Persistencia;
 
 namespace MyApp.Namespace
 {
-    public class verHorariosModel : PageModel
+    public class HorarioModel : PageModel
     {
         private readonly IRepositorioHorario repositorioHorario;
-        public IEnumerable<Horario> horario;
-        public verHorariosModel(IRepositorioHorario repositorioHorario){
-            this.repositorioHorario = repositorioHorario;
+        public IEnumerable<Horario> horarios;
+        public HorarioModel(IRepositorioHorario repositorioHorario){
+            this.repositorioHorario =repositorioHorario;
         }
         public void OnGet()
         {
-            horario = repositorioHorario.GetAllHorario();
+            horarios = repositorioHorario.GetAllHorario();
         }
     }
 }

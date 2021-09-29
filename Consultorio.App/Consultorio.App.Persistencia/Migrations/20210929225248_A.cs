@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    public partial class n : Migration
+    public partial class A : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,6 +13,7 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    NameH = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaDisponible = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

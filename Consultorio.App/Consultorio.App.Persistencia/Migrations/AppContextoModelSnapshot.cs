@@ -56,6 +56,9 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Property<DateTime>("FechaDisponible")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("NameH")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.ToTable("horario");

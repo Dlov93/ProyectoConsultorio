@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2yo99NbPiyZ9fet3Fs1C8TMCzKC1tYhyuVddQYNpkfwMpP30Y7Y4SNXEEMwrC0oLXFXaesYhBBiiVsAjit0zZA==",
+  "dgSpecHash": "BCMogbkHNR0zZgf7zVsWgw+3t7IqFSXVbGKa0+Oqg18zhsdyYJww+kqyU0fr0k9G2j1IPyGkz0H37ViYs6JMlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\netstandard.library.ref\\2.1.0\\netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

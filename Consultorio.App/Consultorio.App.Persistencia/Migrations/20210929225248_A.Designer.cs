@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-    [Migration("20210927134438_n")]
-    partial class n
+    [Migration("20210929225248_A")]
+    partial class A
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -57,6 +57,9 @@ namespace Consultorio.App.Persistencia.Migrations
 
                     b.Property<DateTime>("FechaDisponible")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("NameH")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
