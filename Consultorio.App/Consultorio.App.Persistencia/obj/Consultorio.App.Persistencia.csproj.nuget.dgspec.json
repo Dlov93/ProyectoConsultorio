@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {}
+    "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
+    "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
         "projectName": "Consultorio.App.Dominio",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JUAN SEBASTIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +35,12 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -47,26 +51,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
+    "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
         "projectName": "Consultorio.App.Persistencia",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JUAN SEBASTIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -76,10 +86,9 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj"
+              "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj"
               }
             }
           }
@@ -92,7 +101,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -125,12 +133,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "NETStandard.Library": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     }

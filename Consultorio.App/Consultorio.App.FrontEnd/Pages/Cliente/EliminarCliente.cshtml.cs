@@ -12,24 +12,27 @@ namespace MyApp.Namespace
     public class EliminarClienteModel : PageModel
     {
         private readonly IRepositorioCliente repositorioCliente;
-        //public string Documento{get; set;}
-        public Cliente cliente {get; set;}
-        public EliminarClienteModel(IRepositorioCliente repositorioCliente){
-            this.repositorioCliente = repositorioCliente;
+        public Cliente cliente{get; set;}
+        public EliminarClienteModel(IRepositorioCliente repositorioCliente) 
+        {
+            this.repositorioCliente = repositorioCliente;               
         }
         public void OnGet(string Documento)
         {
             //this.Documento = Documento;
             cliente=repositorioCliente.GetCliente(Documento);
+            Console.WriteLine(Documento);
         }
         public IActionResult OnPost(string Documento){
-           // try{
+             Console.WriteLine(Documento);
+           try{
+                Console.WriteLine(Documento);
                 repositorioCliente.DeleteCliente(Documento);
                 return RedirectToPage("./Cliente");
-           // }
-           // catch{
-            //    return RedirectToPage("../Error");
-            //}
+           }
+            catch{
+                return RedirectToPage("../Error");
+            }
         }
     }
 }

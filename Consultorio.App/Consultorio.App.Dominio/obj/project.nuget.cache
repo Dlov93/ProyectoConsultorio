@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DgvSd/dh3X/LzCSe0SRKTaotJRzXg1ODNk0XgTtyHPbMuMX60APOKLVo1MLGFsB/ZIZNH62/RZEp1MWTcltX6Q==",
+  "dgSpecHash": "GB04AubpOFoPKiZO3mhQEnhGu/1YD6Bd0GEnaVVSh39qftlvpVPz3wf3LfnxMy8FVilvOcaURBNwcCVCQi8tAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\netstandard.library.ref\\2.1.0\\netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

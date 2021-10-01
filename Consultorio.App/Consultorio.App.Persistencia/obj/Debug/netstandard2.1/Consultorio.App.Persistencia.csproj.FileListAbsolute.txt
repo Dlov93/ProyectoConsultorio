@@ -38,3 +38,15 @@ C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
 >>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.deps.json
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfo.cs
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CopyComplete
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb

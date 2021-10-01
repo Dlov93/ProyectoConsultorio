@@ -1,5 +1,6 @@
 ﻿@page
 @model MyApp.Namespace.MedicoModel
+@using Consultorio.App.Dominio;
 @{
 }
 <h1>Listar Médicos</h1>
@@ -31,6 +32,8 @@
     <td><a class="btn btn-primary table-btn" asp-page="../Medico/DetalleMedico" asp-route-documento="@medico.Documento">Detalle</a> </td>
     <td><a class="btn btn-primary table-btn" asp-page="../Medico/EditarMedico" asp-route-documento="@medico.Documento">Editar</a> </td>
     <td><a class="btn btn-primary table-btn" asp-page="../Medico/BorrarMedico" asp-route-documento="@medico.Documento">Borrar</a> </td>
+   
+    
     
 </tr>
 }    

@@ -7,8 +7,6 @@
 <table class=" table table-info table-bordered table-striped" >
 <tr>
     <th scope="col">CodigoA</th>
-    <th scope="col">Medico</th>
-    <th scope="col">Cliente</th>
     <th scope="col">Documento</th>
     <th scope="col">Nombre</th>
     <th scope="col">Apellido</th>
@@ -19,16 +17,14 @@
 @foreach(var auxiliar in Model.auxiliar){
 <tr>
     <td>@auxiliar.CodigoA</td>
-    <td>@auxiliar.Medico</td>
-    <td>@auxiliar.Cliente</td>
     <td>@auxiliar.Documento</td>
     <td>@auxiliar.Nombre</td>
     <td>@auxiliar.Apellido</td>
     <td>@auxiliar.Telefono</td>
     <td>@auxiliar.Genero</td>
-    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/DetalleCita" asp-route-documento="@auxiliar.Documento">Detalle</a> </td>
-    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/EditarCita" asp-route-documento="@auxiliar.Documento">Editar</a> </td>
-    
+    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/DetalleAuxiliar" asp-route-documento="@auxiliar.Documento">Detalle</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/EditarAuxiliar" asp-route-documento="@auxiliar.Documento">Editar</a> </td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Auxiliar/EliminarAuxiliar" asp-route-documento="@auxiliar.Documento">Borrar</a> </td>
 </tr>
 }    
 </table>

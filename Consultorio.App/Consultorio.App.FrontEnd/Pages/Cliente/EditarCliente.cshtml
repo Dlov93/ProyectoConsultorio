@@ -8,18 +8,22 @@
      <div class="form-group row">
         <label asp-for="cliente.Documento" class="col-sm-2"></label>
         <input asp-for="cliente.Documento" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Documento"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Nombre" class="col-sm-2"></label>
         <input asp-for="cliente.Nombre" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Nombre"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Apellido" class="col-sm-2"></label>
         <input asp-for="cliente.Apellido" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Apellido"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.FechaNacimiento" class="col-sm-2"></label>
         <input asp-for="cliente.FechaNacimiento" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.FechaNacimiento"></Span>
         
     </div>
     <div class="form-group row">
@@ -27,23 +31,28 @@
         <div class="col-sm-10">
             <select asp-for="cliente.Genero" asp-items="Html.GetEnumSelectList<Genero>()"></select>
             <option value="-"></option>
+            <Span class="text-danger" asp-Validation-for="cliente.Genero"></Span>
         </div>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Correo" class="col-sm-2"></label>
         <input asp-for="cliente.Correo" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Correo"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Telefono" class="col-sm-2"></label>
         <input asp-for="cliente.Telefono" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Telefono"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Direccion" class="col-sm-2"></label>
         <input asp-for="cliente.Direccion" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Direccion"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Ciudad" class="col-sm-2"></label>
         <input asp-for="cliente.Ciudad" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Ciudad"></Span>
     </div>
     <div class="form-group row">
         <button type="submit" class="btn btn-primary">Actualizar</button>

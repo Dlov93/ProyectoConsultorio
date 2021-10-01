@@ -25,6 +25,11 @@ namespace MyApp.Namespace
         {
             try
             {
+                if(!ModelState.IsValid)
+                {
+                    return Page();
+                }
+
                 repositorioMedico.UpdateMedico(medico);
                 return RedirectToPage("./Medico");
             }

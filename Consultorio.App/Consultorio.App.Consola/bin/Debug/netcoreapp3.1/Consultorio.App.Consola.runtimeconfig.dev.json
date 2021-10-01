@@ -1,13 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\ASUS\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ASUS\\.nuget\\packages"
-=======
-      "C:\\Users\\gilbe\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gilbe\\.nuget\\packages"
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
+      "C:\\Users\\Diana\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Diana\\.nuget\\packages"
     ]
   }
 }

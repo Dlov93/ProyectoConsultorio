@@ -21,6 +21,9 @@ namespace MyApp.Namespace
             cliente= new Cliente();
         }
         public IActionResult OnPost(Cliente cliente){
+            if(!ModelState.IsValid){
+                return Page();
+            }
             repositorioCliente.AddCliente(cliente);
             return RedirectToPage("./Cliente");
         }

@@ -20,6 +20,7 @@ namespace Consultorio.App.FrontEnd
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    
                     webBuilder.UseStartup<Startup>();
                 });
     }

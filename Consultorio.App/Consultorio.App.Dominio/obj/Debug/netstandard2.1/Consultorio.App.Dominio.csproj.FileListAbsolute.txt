@@ -29,3 +29,12 @@ C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\nets
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
 C:\c#\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
 >>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.deps.json
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csprojAssemblyReference.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfo.cs
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
