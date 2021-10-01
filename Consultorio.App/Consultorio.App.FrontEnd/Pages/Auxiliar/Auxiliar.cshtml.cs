@@ -9,12 +9,14 @@ using Consultorio.App.Persistencia;
 
 namespace MyApp.Namespace
 {
-    public class AuxiliarModel : PageModel
+        public class AuxiliarModel : PageModel
+    
     {
         private readonly IRepositorioAuxiliar repositorioAuxiliar;
         public IEnumerable<Auxiliar> auxiliar;
         public AuxiliarModel(IRepositorioAuxiliar repositorioAuxiliar){
             this.repositorioAuxiliar =repositorioAuxiliar;
+            
         }
         public void OnGet()
         {

@@ -5834,10 +5834,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-<<<<<<< HEAD
         "targetAlias": "netcoreapp3.1",
-=======
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5867,5 +5864,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\ASUS\\OneDrive\\Escritorio\\U\\ProyectoConsultorio-1\\Consultorio.App\\Consultorio.App.FrontEnd\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

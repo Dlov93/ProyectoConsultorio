@@ -11,8 +11,11 @@ using Consultorio.App.Dominio;
 namespace MyApp.Namespace
 {
     public class EditarAuxiliarModel : PageModel
+    
     { private readonly IRepositorioAuxiliar RepositorioAuxiliar;
+    
         public Auxiliar Auxiliar{get; set;}
+      
         public EditarAuxiliarModel(IRepositorioAuxiliar RepositorioAuxiliar){
             this.RepositorioAuxiliar = RepositorioAuxiliar;
         }

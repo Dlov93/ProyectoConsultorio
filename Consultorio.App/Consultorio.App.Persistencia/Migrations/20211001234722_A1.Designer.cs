@@ -10,13 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-<<<<<<< HEAD:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210926130857_A.Designer.cs
-    [Migration("20210926130857_A")]
-    partial class A
-=======
-    [Migration("20210925170501_Inicial0")]
-    partial class Inicial0
->>>>>>> 0a307de73d5397d36c89ec503e8d0bd2d1ecf467:Consultorio.App/Consultorio.App.Persistencia/Migrations/20210925170501_Inicial0.Designer.cs
+    [Migration("20211001234722_A1")]
+    partial class A1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
