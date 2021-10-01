@@ -24,6 +24,10 @@ namespace MyApp.Namespace
 
         public IActionResult OnPost(Horario horario)
         {
+            if(!ModelState.IsValid){
+                return Page();
+            }
+            
             try
             {
                 repositorioHorario.AddHorario(horario);

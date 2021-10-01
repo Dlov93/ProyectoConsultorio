@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Vk9ht8JPjQTD7kR2LqX/iRF9q2iAowjAjpnNvLN7rvqxl2lpCLF/pczcK4oznd9RbyZoWjRpt7s4ny2otvNNXA==",
-=======
-  "dgSpecHash": "7T6Qj/EpG0m65xYjdAbR+WlZjhodoVkfJBkG6UjY8xv8vg8K3Fs3Xr4RChVeJE0leEzxb1lyayJ2tfX+50PDkQ==",
->>>>>>> 5b51a999d9b32458bb9e6200766ab91edb2c2bb7
+  "dgSpecHash": "31IkG1ay7p1qimH/z1IkxJTsTxDS7aG7y4RzIg7rLyZJwxulp6AKX7uCFbYizaCt+AmaNd04Zkt276b9Xq2EUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj",
   "expectedPackageFiles": [
@@ -137,5 +133,12 @@
     "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\netstandard.library.ref\\2.1.0\\netstandard.library.ref.2.1.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

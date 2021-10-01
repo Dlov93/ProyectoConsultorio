@@ -13,7 +13,7 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NameH = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NameH = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FechaDisponible = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -27,16 +27,16 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Documento = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Apellido = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Documento = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Nombre = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Apellido = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Genero = table.Column<int>(type: "int", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CodigoA = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Ciudad = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Correo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Ciudad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Correo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Direccion = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Especialidad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Codigo = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -103,11 +103,16 @@ namespace Consultorio.App.Persistencia.Migrations
                 column: "medicoID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_horario_NameH",
+                table: "horario",
+                column: "NameH",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_persona_Documento",
                 table: "persona",
                 column: "Documento",
-                unique: true,
-                filter: "[Documento] IS NOT NULL");
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_persona_HorarioID",

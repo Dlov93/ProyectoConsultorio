@@ -23,6 +23,7 @@ namespace MyApp.Namespace
         }
         public IActionResult OnPost(Horario horario)
         {
+            
             try
             {
                 repositorioHorario.UpdateHorario(horario);

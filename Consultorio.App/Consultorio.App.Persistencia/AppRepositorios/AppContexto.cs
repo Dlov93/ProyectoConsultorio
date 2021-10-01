@@ -22,6 +22,7 @@ namespace Consultorio.App.Persistencia {
             builder.Entity<Persona>()
             .HasIndex(p => p.Documento)
             .IsUnique();
+            
         }
     }
 
