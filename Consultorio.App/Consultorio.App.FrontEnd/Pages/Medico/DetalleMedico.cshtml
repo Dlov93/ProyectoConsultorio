@@ -15,3 +15,7 @@
     <li>Registro Rethus: @Model.medico.RegistroRethus</li>
     <li>Horario: @Model.medico.Horario</li>
 </ul>
+<table>
+    <td><a class="btn btn-primary table-btn" asp-page="../Medico/EditarMedico" asp-route-documento="@Model.medico.Documento">Editar</a></td>
+    <td><a class="btn btn-primary table-btn" asp-page="../Medico/Medico">Cancelar</a> </td>
+</table>
