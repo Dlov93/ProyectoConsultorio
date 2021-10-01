@@ -3,23 +3,28 @@
 @{
 }
 @using Consultorio.App.Dominio
+<h1>Crear Médico</h1>
 <form method="post" class="mt-3">
     <input hidden asp-for="medico.ID"/>
     <div class="form-group row">
         <label asp-for="medico.Documento" class="col-sm-2"></label>
         <input asp-for="medico.Documento" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Documento"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.Nombre" class="col-sm-2"></label>
         <input asp-for="medico.Nombre" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Nombre"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.Apellido" class="col-sm-2"></label>
         <input asp-for="medico.Apellido" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Apellido"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.Telefono" class="col-sm-2"></label>
         <input asp-for="medico.Telefono" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Telefono"></Span>
     </div>
      <div class="form-group row">
         <label asp-for="medico.Genero" class="col-sm-2"></label>
@@ -31,14 +36,17 @@
     <div class="form-group row">
         <label asp-for="medico.Especialidad" class="col-sm-2"></label>
         <input asp-for="medico.Especialidad" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Especialidad"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.Codigo" class="col-sm-2"></label>
         <input asp-for="medico.Codigo" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Codigo"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.RegistroRethus" class="col-sm-2"></label>
         <input asp-for="medico.RegistroRethus" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.RegistroRethus"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="medico.Horario" class="col-sm-2"></label>
