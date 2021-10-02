@@ -8,11 +8,12 @@
     <div class="form-group row">
         <label asp-for="Auxiliar.CodigoA" class="col-sm-2"></label>
         <input asp-for="Auxiliar.CodigoA" class="form-control">
+        <Span class="text-danger" asp-Validation-for="Auxiliar.CodigoA"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="Auxiliar.Documento" class="col-sm-2"></label>
         <input asp-for="Auxiliar.Documento" class="form-control">
-        
+        <Span class="text-danger" asp-Validation-for="Auxiliar.CodigoA"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="Auxiliar.Genero" class="col-sm-2"></label>
@@ -24,14 +25,17 @@
     <div class="form-group row">
         <label asp-for="Auxiliar.Nombre" class="col-sm-2"></label>
         <input asp-for="Auxiliar.Nombre" class="form-control">
+        <Span class="text-danger" asp-Validation-for="Auxiliar.Nombre"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="Auxiliar.Apellido" class="col-sm-2"></label>
         <input asp-for="Auxiliar.Apellido" class="form-control">
+        <Span class="text-danger" asp-Validation-for="Auxiliar.Apellido"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="Auxiliar.Telefono" class="col-sm-2"></label>
         <input asp-for="Auxiliar.Telefono" class="form-control">
+        <Span class="text-danger" asp-Validation-for="Auxiliar.Telefono"></Span>
     </div>
     <div class="form-group row">
         <button type="submit" class="btn btn-primary">Agregar</button>

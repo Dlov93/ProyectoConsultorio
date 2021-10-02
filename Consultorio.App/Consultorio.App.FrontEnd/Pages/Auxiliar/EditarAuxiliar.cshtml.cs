@@ -24,6 +24,9 @@ namespace MyApp.Namespace
             Auxiliar= RepositorioAuxiliar.GetAuxiliar(Documento);
         }
         public IActionResult OnPost(Auxiliar Auxiliar){
+            if(!ModelState.IsValid){
+                return Page();
+                }
             RepositorioAuxiliar.UpdateAuxiliar(Auxiliar);
             return RedirectToPage("./Auxiliar");
 

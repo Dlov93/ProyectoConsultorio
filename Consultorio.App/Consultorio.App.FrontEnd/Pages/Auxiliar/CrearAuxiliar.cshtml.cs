@@ -21,8 +21,12 @@ namespace MyApp.Namespace
             Auxiliar= new Auxiliar();
         }
         public IActionResult OnPost(Auxiliar Auxiliar){
+            if(!ModelState.IsValid){
+                return Page();
+            }
             repositorioAuxiliar.AddAuxiliar(Auxiliar);
             return RedirectToPage("./Auxiliar");
         }
+        
     }
 }
