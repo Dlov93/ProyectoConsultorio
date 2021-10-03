@@ -12,14 +12,19 @@ namespace MyApp.Namespace
     public class CrearMedicoModel : PageModel
     {
         private readonly IRepositorioMedico repositorioMedico;
+        private readonly IRepositorioHorario repositorioHorario;
         public Medico medico{get; set;}
-        public CrearMedicoModel(IRepositorioMedico repositorioMedico)
+        public IEnumerable<Medico> medicos {get; set;}
+        public IEnumerable<Horario> horarios {get; set;} 
+        public CrearMedicoModel(IRepositorioMedico repositorioMedico,IRepositorioHorario repositorioHorario)
         {
             this.repositorioMedico = repositorioMedico;
+            this.repositorioHorario = repositorioHorario;
         }
         public void OnGet()
         {
             medico = new Medico();
+            horarios = repositorioHorario.GetAllHorario();
         }
 
         public IActionResult OnPost(Medico medico)

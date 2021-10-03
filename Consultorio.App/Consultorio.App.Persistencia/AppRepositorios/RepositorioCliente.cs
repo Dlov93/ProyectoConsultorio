@@ -7,11 +7,18 @@ namespace Consultorio.App.Persistencia{
     
     public class RepositorioCliente : IRepositorioCliente{
         private readonly AppContexto _appContexto;
+        private readonly Security security;
+
         
         public RepositorioCliente(AppContexto appContexto){
             _appContexto=appContexto;
+            security =new Security();
         }
         Cliente IRepositorioCliente.AddCliente(Cliente cliente){
+            string contraseña = cliente.Contraseña;
+            contraseña += "claxo"+contraseña.Reverse();
+            contraseña = security.GetMD5Hash(contraseña);
+            cliente.Contraseña = contraseña;
             var clienteAdicionado= _appContexto.cliente.Add(cliente);
             _appContexto.SaveChanges();
             return clienteAdicionado.Entity;
@@ -41,6 +48,8 @@ namespace Consultorio.App.Persistencia{
                 clienteEncontrado.Direccion= cliente.Direccion;
                 clienteEncontrado.Correo= cliente.Correo;
                 clienteEncontrado.FechaNacimiento= cliente.FechaNacimiento;
+                clienteEncontrado.UserName= cliente.UserName;
+                clienteEncontrado.Contraseña=cliente.Contraseña;
                 _appContexto.SaveChanges();
             }
             return clienteEncontrado;

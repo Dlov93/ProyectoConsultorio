@@ -1,6 +1,6 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System;
-using System.ComponentModel.DataAnnotations;
 namespace Consultorio.App.Dominio{
 public class Persona{
     public int ID{get; set;}            //identificador o codigo de cada Persona
@@ -14,6 +14,12 @@ public class Persona{
     public string Telefono{get; set;}
     [Required]
     public Genero Genero{get; set;}
+    [Required,RegularExpression(@"^\$*$",ErrorMessage="Los espacios no son permitidos")]
+    public string UserName {get; set;}
+    [Required, StringLength(50), EmailAddress]
+    public string Correo{get; set;}
+    [Required,DataType(DataType.Password)]
+    public string Contraseña{get; set;}
     
 
 

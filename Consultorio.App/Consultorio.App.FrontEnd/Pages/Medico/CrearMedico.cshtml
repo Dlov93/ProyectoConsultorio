@@ -34,6 +34,21 @@
         </div>
     </div>
     <div class="form-group row">
+        <label asp-for="medico.UserName" class="col-sm-2"></label>
+        <input asp-for="medico.UserName" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.UserName"></Span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Correo" class="col-sm-2"></label>
+        <input asp-for="medico.Correo" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Correo"></Span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="medico.Contraseña" class="col-sm-2"></label>
+        <input asp-for="medico.Contraseña" class="form-control">
+        <Span class="text-danger" asp-Validation-for="medico.Contraseña"></Span>
+    </div>
+    <div class="form-group row">
         <label asp-for="medico.Especialidad" class="col-sm-2"></label>
         <input asp-for="medico.Especialidad" class="form-control">
         <Span class="text-danger" asp-Validation-for="medico.Especialidad"></Span>
@@ -50,7 +65,9 @@
     </div>
     <div class="form-group row">
         <label asp-for="medico.Horario" class="col-sm-2"></label>
-        <input asp-for="medico.Horario" class="form-control">
+        <input asp-for="medico.Horario" class="form-control" value="" required></select>
+            <option value="-"></option>
+        </div>
     </div>
     <div class="form-group row">
         <button type="submit" class="btn btn-primary">Agregar</button>

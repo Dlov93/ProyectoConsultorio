@@ -2,19 +2,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Consultorio.App.Dominio;
+using System.Security.Cryptography;
 
 namespace Consultorio.App.Persistencia{
     
     public class RepositorioMedico : IRepositorioMedico{
         private readonly AppContexto _appContext;
+        private readonly Security security;
         
         public RepositorioMedico(AppContexto appContext){
             _appContext=appContext;
+            security =new Security();
         }
         Medico IRepositorioMedico.AddMedico(Medico medico){
-            var medicoAdicionado= _appContext.medico.Add(medico);
+            string contraseña = medico.Contraseña;
+            contraseña += "claxo"+contraseña.Reverse();
+            contraseña = security.GetMD5Hash(contraseña);
+            medico.Contraseña = contraseña;
+            var medicoAdicionado= _appContext.medico.Add(medico).Entity;
             _appContext.SaveChanges();
-            return medicoAdicionado.Entity;
+            return medicoAdicionado;
         }
         void IRepositorioMedico.DeleteMedico(string Documento){
             var medicoEncontrado= _appContext.medico.FirstOrDefault(m => m.Documento==Documento);
@@ -40,6 +47,9 @@ namespace Consultorio.App.Persistencia{
                 medicoEncontrado.Codigo= medico.Codigo;
                 medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
                 medicoEncontrado.Horario= medico.Horario;
+                medicoEncontrado.UserName= medico.UserName;
+                medicoEncontrado.Correo= medico.Correo;
+                medicoEncontrado.Contraseña=medico.Contraseña;
                 _appContext.SaveChanges();
             }
             return medicoEncontrado;

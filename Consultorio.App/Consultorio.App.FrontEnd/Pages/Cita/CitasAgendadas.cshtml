@@ -2,3 +2,25 @@
 @model MyApp.Namespace.CitasAgendadasModel
 @{
 }
+<h1>Citas Agendadas</h1>
+<a class="btn btn.primary table-btn" asp-page="../Cita/AgendarCita">AgendarCita</a>
+<table class="table table-info table-bordered table-striped">
+   <tr>
+       <th scope="col">Cliente</th>
+       <th scope="col">Medico</th>
+       <th scope="col">fecha</th>
+       <th scope="col">Auxiliar</th>
+   </tr>
+   @foreach(var cita in Model.citas){
+   <tr>
+       <td>@cita.cliente.Nombre</td>
+       <td>@cita.medico.Nombre</td>
+       <td>@cita.medico.Horario</td>
+       <td>@cita.auxiliar.Nombre</td>
+       <td><a class="btn btn-primary table-btn" asp-page="../Cita/AgendarCita" asp-route-documento="@cita.ID">Detalle</a> </td>
+       <td><a class="btn btn-primary table-btn" asp-page="../Cita/EditarCita" asp-route-documento="@cita.ID">Editar</a> </td>
+       <td><a class="btn btn-primary table-btn" asp-page="../Cita/EliminarCita" asp-route-documento="@cita.ID">Eliminar</a> </td>
+
+   </tr>
+   } 
+</table>

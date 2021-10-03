@@ -35,9 +35,19 @@
         </div>
     </div>
     <div class="form-group row">
+        <label asp-for="cliente.UserName" class="col-sm-2"></label>
+        <input asp-for="cliente.UserName" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.UserName"></Span>
+    </div>
+    <div class="form-group row">
         <label asp-for="cliente.Correo" class="col-sm-2"></label>
         <input asp-for="cliente.Correo" class="form-control">
         <Span class="text-danger" asp-Validation-for="cliente.Correo"></Span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="cliente.Contraseña" class="col-sm-2"></label>
+        <input asp-for="cliente.Contraseña" class="form-control">
+        <Span class="text-danger" asp-Validation-for="cliente.Contraseña"></Span>
     </div>
     <div class="form-group row">
         <label asp-for="cliente.Telefono" class="col-sm-2"></label>

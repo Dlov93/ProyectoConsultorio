@@ -58,12 +58,9 @@ namespace Consultorio.App.Persistencia.Migrations
 
                     b.Property<string>("NameH")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("NameH")
-                        .IsUnique();
 
                     b.ToTable("horario");
                 });
@@ -76,6 +73,14 @@ namespace Consultorio.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Contraseña")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Correo")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -102,6 +107,9 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.HasIndex("Documento")
@@ -116,25 +124,10 @@ namespace Consultorio.App.Persistencia.Migrations
                 {
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
-<<<<<<< HEAD
-                    b.Property<int?>("ClienteID")
-                        .HasColumnType("int");
-
                     b.Property<string>("CodigoA")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("MedicoID")
-                        .HasColumnType("int");
-
-                    b.HasIndex("ClienteID");
-
-                    b.HasIndex("MedicoID");
-
-=======
-                    b.Property<string>("CodigoA")
-                        .HasColumnType("nvarchar(max)");
-
->>>>>>> 44d880c15324fceb11092f0bf0db3d9474f77092
                     b.HasDiscriminator().HasValue("Auxiliar");
                 });
 
@@ -143,11 +136,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
                     b.Property<string>("Ciudad")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Correo")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -168,16 +156,22 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
                     b.Property<string>("Codigo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Especialidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int?>("HorarioID")
                         .HasColumnType("int");
 
                     b.Property<string>("RegistroRethus")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasIndex("HorarioID");
 
@@ -205,24 +199,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("medico");
                 });
 
-<<<<<<< HEAD
-            modelBuilder.Entity("Consultorio.App.Dominio.Auxiliar", b =>
-                {
-                    b.HasOne("Consultorio.App.Dominio.Cliente", "Cliente")
-                        .WithMany()
-                        .HasForeignKey("ClienteID");
-
-                    b.HasOne("Consultorio.App.Dominio.Medico", "Medico")
-                        .WithMany()
-                        .HasForeignKey("MedicoID");
-
-                    b.Navigation("Cliente");
-
-                    b.Navigation("Medico");
-                });
-
-=======
->>>>>>> 44d880c15324fceb11092f0bf0db3d9474f77092
             modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>
                 {
                     b.HasOne("Consultorio.App.Dominio.Horario", "Horario")

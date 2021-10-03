@@ -10,13 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-<<<<<<< HEAD:Consultorio.App/Consultorio.App.Persistencia/Migrations/20211001234722_A1.Designer.cs
-    [Migration("20211001234722_A1")]
-    partial class A1
-=======
-    [Migration("20211001213037_A")]
-    partial class A
->>>>>>> 44d880c15324fceb11092f0bf0db3d9474f77092:Consultorio.App/Consultorio.App.Persistencia/Migrations/20211001213037_A.Designer.cs
+    [Migration("20211002141109_xxx")]
+    partial class xxx
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -65,12 +60,9 @@ namespace Consultorio.App.Persistencia.Migrations
 
                     b.Property<string>("NameH")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("NameH")
-                        .IsUnique();
 
                     b.ToTable("horario");
                 });
@@ -83,6 +75,14 @@ namespace Consultorio.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Contraseña")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Correo")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -109,6 +109,9 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.HasIndex("Documento")
@@ -124,6 +127,7 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
                     b.Property<string>("CodigoA")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Auxiliar");
@@ -134,11 +138,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
                     b.Property<string>("Ciudad")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Correo")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -159,16 +158,22 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasBaseType("Consultorio.App.Dominio.Persona");
 
                     b.Property<string>("Codigo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Especialidad")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int?>("HorarioID")
                         .HasColumnType("int");
 
                     b.Property<string>("RegistroRethus")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasIndex("HorarioID");
 

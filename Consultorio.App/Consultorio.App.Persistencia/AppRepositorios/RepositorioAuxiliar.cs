@@ -7,11 +7,18 @@ namespace Consultorio.App.Persistencia{
     
     public class RepositorioAuxiliar : IRepositorioAuxiliar{
         private readonly AppContexto _appContext;
+        private readonly Security security;
+
         
         public RepositorioAuxiliar(AppContexto appContext){
             _appContext=appContext;
+            security =new Security();
         }
         Auxiliar IRepositorioAuxiliar.AddAuxiliar(Auxiliar auxiliar){
+            string contraseña = auxiliar.Contraseña;
+            contraseña += "claxo"+contraseña.Reverse();
+            contraseña = security.GetMD5Hash(contraseña);
+            auxiliar.Contraseña = contraseña;
             var auxiliarAdicionado= _appContext.auxiliar.Add(auxiliar);
             _appContext.SaveChanges();
             return auxiliarAdicionado.Entity;
@@ -38,6 +45,11 @@ namespace Consultorio.App.Persistencia{
                 auxiliarEncontrado.Genero = auxiliar.Genero;
                 auxiliarEncontrado.Telefono=auxiliar.Telefono;
                 auxiliarEncontrado.CodigoA= auxiliar.CodigoA;
+                auxiliarEncontrado.UserName= auxiliar.UserName;
+                auxiliarEncontrado.Correo= auxiliar.Correo;
+                auxiliarEncontrado.Contraseña=auxiliar.Contraseña;
+
+                
               
                 _appContext.SaveChanges();
             }
