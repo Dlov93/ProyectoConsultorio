@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-    [Migration("20211002141109_xxx")]
-    partial class xxx
+    [Migration("20211003171401_A")]
+    partial class A
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,6 +80,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Contraseña")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Correo")
@@ -110,6 +111,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");

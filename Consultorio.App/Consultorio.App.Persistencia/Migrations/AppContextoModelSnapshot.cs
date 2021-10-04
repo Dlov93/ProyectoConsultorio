@@ -78,6 +78,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Contraseña")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Correo")
@@ -108,6 +109,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
