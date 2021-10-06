@@ -30,10 +30,10 @@ namespace Consultorio.App.Persistencia{
             _appContext.SaveChanges();
         }
         public IEnumerable<Medico> GetAllMedico(){
-            return _appContext.medico.Include("horario");
+            return _appContext.medico;
         }
         public Medico GetMedico(string Documento){
-            return _appContext.medico.Include("horario").FirstOrDefault(m => m.Documento==Documento);
+            return _appContext.medico.FirstOrDefault(m => m.Documento==Documento);
         }
         public Medico UpdateMedico(Medico medico){
             medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
@@ -45,7 +45,7 @@ namespace Consultorio.App.Persistencia{
                 medicoEncontrado.Telefono=medico.Telefono;
                 medicoEncontrado.Codigo= medico.Codigo;
                 medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
-                medicoEncontrado.horario= medico.horario;
+                medicoEncontrado.Horario= medico.Horario;
                 medicoEncontrado.UserName= medico.UserName;
                 medicoEncontrado.Correo= medico.Correo;
                 medicoEncontrado.Contraseña=medico.Contraseña;
