@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Consultorio.App.Dominio;
-using System.Security.Cryptography;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Consultorio.App.Persistencia{
     
@@ -12,33 +13,31 @@ namespace Consultorio.App.Persistencia{
         
         public RepositorioMedico(AppContexto appContext){
             _appContext=appContext;
-            security =new Security();
+            security = new Security();
         }
-        Medico IRepositorioMedico.AddMedico(Medico medico){
-            string contraseña = medico.Contraseña;
-            contraseña += "claxo"+contraseña.Reverse();
-            contraseña = security.GetMD5Hash(contraseña);
-            medico.Contraseña = contraseña;
-            var medicoAdicionado= _appContext.medico.Add(medico).Entity;
+        public Medico AddMedico(Medico medico){
+            medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
+            Medico medicoAdicionado= _appContext.Add(medico).Entity;
             _appContext.SaveChanges();
             return medicoAdicionado;
         }
-        void IRepositorioMedico.DeleteMedico(string Documento){
-            var medicoEncontrado= _appContext.medico.FirstOrDefault(m => m.Documento==Documento);
+        public void DeleteMedico(string Documento){
+            Medico medicoEncontrado= _appContext.medico.FirstOrDefault(m => m.Documento==Documento);
             if(medicoEncontrado==null){
             return;
             }
             _appContext.medico.Remove(medicoEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<Medico> IRepositorioMedico.GetAllMedico(){
-            return _appContext.medico;
+        public IEnumerable<Medico> GetAllMedico(){
+            return _appContext.medico.Include("horario");
         }
-        Medico IRepositorioMedico.GetMedico(string Documento){
-            return _appContext.medico.FirstOrDefault(c => c.Documento==Documento);
+        public Medico GetMedico(string Documento){
+            return _appContext.medico.Include("horario").FirstOrDefault(m => m.Documento==Documento);
         }
-        Medico IRepositorioMedico.UpdateMedico(Medico medico){
-            var medicoEncontrado=_appContext.medico.FirstOrDefault(m => m.Documento==medico.Documento);
+        public Medico UpdateMedico(Medico medico){
+            medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
+            Medico medicoEncontrado=_appContext.medico.FirstOrDefault(m => m.Documento==medico.Documento);
             if(medicoEncontrado!=null){
                 medicoEncontrado.Nombre=medico.Nombre;
                 medicoEncontrado.Apellido=medico.Apellido;
@@ -46,7 +45,7 @@ namespace Consultorio.App.Persistencia{
                 medicoEncontrado.Telefono=medico.Telefono;
                 medicoEncontrado.Codigo= medico.Codigo;
                 medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
-                medicoEncontrado.Horario= medico.Horario;
+                medicoEncontrado.horario= medico.horario;
                 medicoEncontrado.UserName= medico.UserName;
                 medicoEncontrado.Correo= medico.Correo;
                 medicoEncontrado.Contraseña=medico.Contraseña;
@@ -55,6 +54,10 @@ namespace Consultorio.App.Persistencia{
             return medicoEncontrado;
 
         }
+        /*public IEnumerable<Horario> GetAllHorario(){
+            return _appContext.horario;
+        }*/
+
 
     }
 }

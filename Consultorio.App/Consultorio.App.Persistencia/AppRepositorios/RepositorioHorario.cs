@@ -11,12 +11,12 @@ namespace Consultorio.App.Persistencia{
         public RepositorioHorario (AppContexto appContext){
             _appContext=appContext;
         }
-        Horario IRepositorioHorario.AddHorario(Horario horario){
-            var horarioAdicionado = _appContext.horario.Add(horario);
+        public Horario AddHorario(Horario horario){
+            Horario horarioAdicionado = _appContext.Add(horario).Entity;
             _appContext.SaveChanges();
-            return horarioAdicionado.Entity;
+            return horarioAdicionado;
         }
-        void IRepositorioHorario.DeleteHorario(string NameH){
+        public void DeleteHorario(string NameH){
             var HorarioEncontrado= _appContext.horario.FirstOrDefault(h => h.NameH==NameH);
             if(HorarioEncontrado==null){
             return;
@@ -24,13 +24,13 @@ namespace Consultorio.App.Persistencia{
             _appContext.horario.Remove(HorarioEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<Horario> IRepositorioHorario.GetAllHorario(){
+        public IEnumerable<Horario> GetAllHorario(){
             return _appContext.horario;
         }
-        Horario IRepositorioHorario.GetHorario(string NameH){
+        public Horario GetHorario(string NameH){
             return _appContext.horario.FirstOrDefault(h => h.NameH==NameH);
         }
-        Horario IRepositorioHorario.UpdateHorario(Horario horario){
+        public Horario UpdateHorario(Horario horario){
             var horarioEncontrado=_appContext.horario.FirstOrDefault(h => h.NameH == horario.NameH);
             if(horarioEncontrado!=null){
                 horarioEncontrado.FechaDisponible=horario.FechaDisponible;

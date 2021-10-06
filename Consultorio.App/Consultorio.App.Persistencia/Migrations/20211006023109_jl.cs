@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    public partial class xxx : Migration
+    public partial class jl : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,9 +32,9 @@ namespace Consultorio.App.Persistencia.Migrations
                     Apellido = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Genero = table.Column<int>(type: "int", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Correo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CodigoA = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Ciudad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
@@ -43,14 +43,14 @@ namespace Consultorio.App.Persistencia.Migrations
                     Especialidad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Codigo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     RegistroRethus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    HorarioID = table.Column<int>(type: "int", nullable: true)
+                    horarioID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_persona", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_persona_horario_HorarioID",
-                        column: x => x.HorarioID,
+                        name: "FK_persona_horario_horarioID",
+                        column: x => x.horarioID,
                         principalTable: "horario",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
@@ -64,11 +64,18 @@ namespace Consultorio.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     clienteID = table.Column<int>(type: "int", nullable: true),
                     medicoID = table.Column<int>(type: "int", nullable: true),
+                    horarioID = table.Column<int>(type: "int", nullable: true),
                     auxiliarID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_cita", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_cita_horario_horarioID",
+                        column: x => x.horarioID,
+                        principalTable: "horario",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_cita_persona_auxiliarID",
                         column: x => x.auxiliarID,
@@ -100,6 +107,11 @@ namespace Consultorio.App.Persistencia.Migrations
                 column: "clienteID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_cita_horarioID",
+                table: "cita",
+                column: "horarioID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_cita_medicoID",
                 table: "cita",
                 column: "medicoID");
@@ -111,9 +123,9 @@ namespace Consultorio.App.Persistencia.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_persona_HorarioID",
+                name: "IX_persona_horarioID",
                 table: "persona",
-                column: "HorarioID");
+                column: "horarioID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Consultorio.App.FrontEnd/1.0.0": {
         "dependencies": {
+          "Consultorio.App.Dominio": "1.0.0",
           "Consultorio.App.Persistencia": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",

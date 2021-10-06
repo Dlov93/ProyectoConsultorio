@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Consultorio.App.Dominio;
 using Consultorio.App.Persistencia;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyApp.Namespace
 {
@@ -14,8 +15,9 @@ namespace MyApp.Namespace
         private readonly IRepositorioMedico repositorioMedico;
         private readonly IRepositorioHorario repositorioHorario;
         public Medico medico{get; set;}
-        public IEnumerable<Medico> medicos {get; set;}
-        public IEnumerable<Horario> horarios {get; set;} 
+        public Horario horario {get; set;}
+        public IEnumerable<SelectListItem> medicos {get; set;}
+        public IEnumerable<SelectListItem> horarios {get; set;} 
         public CrearMedicoModel(IRepositorioMedico repositorioMedico,IRepositorioHorario repositorioHorario)
         {
             this.repositorioMedico = repositorioMedico;
@@ -24,7 +26,7 @@ namespace MyApp.Namespace
         public void OnGet()
         {
             medico = new Medico();
-            horarios = repositorioHorario.GetAllHorario();
+            //horarios = repositorioHorario.GetAllHorario();
         }
 
         public IActionResult OnPost(Medico medico)

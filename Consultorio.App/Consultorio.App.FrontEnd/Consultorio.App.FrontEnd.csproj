@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Consultorio.App.Persistencia\Consultorio.App.Persistencia.csproj" />
+    <ProjectReference Include="..\Consultorio.App.Dominio\Consultorio.App.Dominio.csproj" />
   </ItemGroup>
 
   <ItemGroup>

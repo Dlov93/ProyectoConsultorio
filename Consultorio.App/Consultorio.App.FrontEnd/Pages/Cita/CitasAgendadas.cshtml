@@ -2,25 +2,18 @@
 @model MyApp.Namespace.CitasAgendadasModel
 @{
 }
+@using Consultorio.App.Dominio
 <h1>Citas Agendadas</h1>
 <a class="btn btn.primary table-btn" asp-page="../Cita/AgendarCita">AgendarCita</a>
-<table class="table table-info table-bordered table-striped">
-   <tr>
-       <th scope="col">Cliente</th>
-       <th scope="col">Medico</th>
-       <th scope="col">fecha</th>
-       <th scope="col">Auxiliar</th>
-   </tr>
-   @foreach(var cita in Model.citas){
-   <tr>
-       <td>@cita.cliente.Nombre</td>
-       <td>@cita.medico.Nombre</td>
-       <td>@cita.medico.Horario</td>
-       <td>@cita.auxiliar.Nombre</td>
-       <td><a class="btn btn-primary table-btn" asp-page="../Cita/AgendarCita" asp-route-documento="@cita.ID">Detalle</a> </td>
-       <td><a class="btn btn-primary table-btn" asp-page="../Cita/EditarCita" asp-route-documento="@cita.ID">Editar</a> </td>
-       <td><a class="btn btn-primary table-btn" asp-page="../Cita/EliminarCita" asp-route-documento="@cita.ID">Eliminar</a> </td>
+<!--<ul class="list-group">
+       <li class="list-group-item">Cliente<select asp-for="Documento" asp-items="Model.cliente" name="testSelect"></select> <a class="btn btn-primary" asp-page="./CitasAgendadas" asp-route-Documento="@Model.Documento">Listar</a></li>
+       <li class="list-group-item">Medico<select asp-for="Documento" asp-items="Model.medico" name="testSelect"></select> <a class="btn btn-primary" asp-page="./CitasAgendadas" asp-route-Documento="@Model.Documento">Listar</a></li>
+      <li class="list-group-item">Horario<select asp-for="ID" asp-items="Model.horario" name="testSelect"></select> <a class="btn btn-primary" asp-page="./CitasAgendadas" asp-route-Documento="@Model.Documento">Listar</a></li>
+      <li class="list-group-item">Auxiliar<select asp-for="Documento" asp-items="Model.auxiliar" name="testSelect"></select> <a class="btn btn-primary" asp-page="./CitasAgendadas" asp-route-Documento="@Model.Documento">Listar</a></li>
+</ul> --> 
+       <a class="btn btn-primary table-btn" asp-page="../Cita/AgendarCita" asp-route-documento="@Model.citas">Detalle</a> 
+       <a class="btn btn-primary table-btn" asp-page="../Cita/EditarCita" asp-route-documento="@Model.citas">Editar</a> 
+       <a class="btn btn-primary table-btn" asp-page="../Cita/EliminarCita" asp-route-documento="@Model.citas">Eliminar</a> 
 
-   </tr>
-   } 
-</table>
+   
+

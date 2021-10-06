@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-    [Migration("20211002141109_xxx")]
-    partial class xxx
+    [Migration("20211006023109_jl")]
+    partial class jl
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,9 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Property<int?>("clienteID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("horarioID")
+                        .HasColumnType("int");
+
                     b.Property<int?>("medicoID")
                         .HasColumnType("int");
 
@@ -42,6 +45,8 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasIndex("auxiliarID");
 
                     b.HasIndex("clienteID");
+
+                    b.HasIndex("horarioID");
 
                     b.HasIndex("medicoID");
 
@@ -80,6 +85,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Contraseña")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Correo")
@@ -110,6 +116,7 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
@@ -167,15 +174,15 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("HorarioID")
-                        .HasColumnType("int");
-
                     b.Property<string>("RegistroRethus")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.HasIndex("HorarioID");
+                    b.Property<int?>("horarioID")
+                        .HasColumnType("int");
+
+                    b.HasIndex("horarioID");
 
                     b.HasDiscriminator().HasValue("Medico");
                 });
@@ -190,6 +197,10 @@ namespace Consultorio.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("clienteID");
 
+                    b.HasOne("Consultorio.App.Dominio.Horario", "horario")
+                        .WithMany()
+                        .HasForeignKey("horarioID");
+
                     b.HasOne("Consultorio.App.Dominio.Medico", "medico")
                         .WithMany()
                         .HasForeignKey("medicoID");
@@ -198,16 +209,18 @@ namespace Consultorio.App.Persistencia.Migrations
 
                     b.Navigation("cliente");
 
+                    b.Navigation("horario");
+
                     b.Navigation("medico");
                 });
 
             modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>
                 {
-                    b.HasOne("Consultorio.App.Dominio.Horario", "Horario")
+                    b.HasOne("Consultorio.App.Dominio.Horario", "horario")
                         .WithMany()
-                        .HasForeignKey("HorarioID");
+                        .HasForeignKey("horarioID");
 
-                    b.Navigation("Horario");
+                    b.Navigation("horario");
                 });
 #pragma warning restore 612, 618
         }

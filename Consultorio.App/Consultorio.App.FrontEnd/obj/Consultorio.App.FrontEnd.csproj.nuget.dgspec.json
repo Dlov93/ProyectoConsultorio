@@ -81,6 +81,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj"
+              },
               "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
                 "projectPath": "C:\\Users\\Diana\\Desktop\\clases\\programacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj"
               }

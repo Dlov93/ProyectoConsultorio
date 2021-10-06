@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Consultorio.App.Dominio{
@@ -11,8 +12,8 @@ namespace Consultorio.App.Dominio{
          [Required(ErrorMessage="Registro Rethus es requerido"), StringLength(20,MinimumLength=5,ErrorMessage="Por favor digite su Registro Rethus")]
          /// Registro Unico Nacional del Talento Humano 
         public string RegistroRethus { get; set; }
-       
-        public Horario Horario{ get; set;}
+        [Required, DataType(DataType.DateTime)]
+        public Horario horario{ get; set;}
 
     }
 

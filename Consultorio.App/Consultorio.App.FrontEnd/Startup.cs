@@ -27,11 +27,12 @@ namespace Consultorio.App.FrontEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSingleton<IRepositorioCliente>(new RepositorioCliente(new AppContexto()));
-            services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(new AppContexto()));
-            services.AddSingleton<IRepositorioAuxiliar>(new RepositorioAuxiliar(new AppContexto()));
-            services.AddSingleton<IRepositorioCita>(new RepositorioCita(new AppContexto()));
-            services.AddSingleton<IRepositorioHorario>(new RepositorioHorario(new AppContexto()));
+            AppContexto _contexto = new AppContexto();
+            services.AddSingleton<IRepositorioCliente>(new RepositorioCliente(_contexto));
+            services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(_contexto));
+            services.AddSingleton<IRepositorioAuxiliar>(new RepositorioAuxiliar(_contexto));
+            services.AddSingleton<IRepositorioCita>(new RepositorioCita(_contexto));
+            services.AddSingleton<IRepositorioHorario>(new RepositorioHorario(_contexto));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,5 +61,6 @@ namespace Consultorio.App.FrontEnd
                 endpoints.MapRazorPages();
             });
         }
+
     }
 }
