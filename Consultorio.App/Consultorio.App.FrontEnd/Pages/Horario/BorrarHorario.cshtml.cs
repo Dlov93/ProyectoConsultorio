@@ -20,12 +20,12 @@ namespace MyApp.Namespace
         public void OnGet(string NameH)
         {
             horario = repositorioHorario.GetHorario(NameH);
-            Console.WriteLine(NameH);
+            
         }
         public IActionResult OnPost(string NameH){
-             Console.WriteLine(NameH);
+            
            try{
-                Console.WriteLine(NameH);
+               
                 repositorioHorario.DeleteHorario(NameH);
                 return RedirectToPage("./Horario");
            }

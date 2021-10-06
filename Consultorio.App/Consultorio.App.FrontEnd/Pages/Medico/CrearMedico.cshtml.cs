@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Consultorio.App.Dominio;
 using Consultorio.App.Persistencia;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyApp.Namespace
 {
@@ -13,8 +14,10 @@ namespace MyApp.Namespace
     {
         private readonly IRepositorioMedico repositorioMedico;
         public Medico medico{get; set;}
+
         public IEnumerable<Medico> medicos {get; set;}
         public CrearMedicoModel(IRepositorioMedico repositorioMedico)
+
         {
             this.repositorioMedico = repositorioMedico;
         }

@@ -14,7 +14,7 @@ namespace MyApp.Namespace
     
     {
         private readonly IRepositorioAuxiliar repositorioAuxiliar;
-        public IEnumerable<Auxiliar> auxiliar;
+        public IEnumerable<Auxiliar> auxiliar{get; set;}
         public AuxiliarModel(IRepositorioAuxiliar repositorioAuxiliar){
             this.repositorioAuxiliar =repositorioAuxiliar;
             

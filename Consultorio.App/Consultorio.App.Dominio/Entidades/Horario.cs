@@ -8,12 +8,9 @@ namespace Consultorio.App.Dominio{
         public int ID {get; set;}
 
         //[NameHExistAttribute(ErrorMessage = "El nombre ya existe")]
-        [Required(ErrorMessage = "El campo es obligatorio")]
-        [Display(Name="Ingrese un nombre para su horario")]
+        [Required(ErrorMessage = "El campo es obligatorio"),Display(Name="Ingrese un nombre para su horario")]
         public string NameH {get; set;}
-        
-        [Required(ErrorMessage ="El campo es obligatorio")]
-        [Display(Name="Ingresa el horario")]
+        [Required, DataType(DataType.DateTime),Display(Name="Ingresa el horario")]
         public DateTime FechaDisponible {get;set;}
     }
 

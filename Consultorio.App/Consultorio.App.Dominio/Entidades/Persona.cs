@@ -14,7 +14,7 @@ public class Persona{
     public string Telefono{get; set;}
     [Required]
     public Genero Genero{get; set;}
-    [Required,RegularExpression(@"^\$*$",ErrorMessage="Los espacios no son permitidos")]
+    [Required]
     public string UserName {get; set;}
     [Required, StringLength(50), EmailAddress]
     public string Correo{get; set;}

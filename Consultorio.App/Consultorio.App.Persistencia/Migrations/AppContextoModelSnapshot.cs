@@ -32,6 +32,9 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Property<int?>("clienteID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("horarioID")
+                        .HasColumnType("int");
+
                     b.Property<int?>("medicoID")
                         .HasColumnType("int");
 
@@ -40,6 +43,8 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.HasIndex("auxiliarID");
 
                     b.HasIndex("clienteID");
+
+                    b.HasIndex("horarioID");
 
                     b.HasIndex("medicoID");
 
@@ -188,6 +193,10 @@ namespace Consultorio.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("clienteID");
 
+                    b.HasOne("Consultorio.App.Dominio.Horario", "horario")
+                        .WithMany()
+                        .HasForeignKey("horarioID");
+
                     b.HasOne("Consultorio.App.Dominio.Medico", "medico")
                         .WithMany()
                         .HasForeignKey("medicoID");
@@ -195,6 +204,8 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("auxiliar");
 
                     b.Navigation("cliente");
+
+                    b.Navigation("horario");
 
                     b.Navigation("medico");
                 });

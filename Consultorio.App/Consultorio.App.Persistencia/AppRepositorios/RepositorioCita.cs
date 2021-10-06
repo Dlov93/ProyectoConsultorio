@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Consultorio.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace Consultorio.App.Persistencia{
     
@@ -11,37 +12,50 @@ namespace Consultorio.App.Persistencia{
         public RepositorioCita(AppContexto appContexto){
             _appContexto=appContexto;
         }
-        Cita IRepositorioCita.AddCita(Cita cita){
-            var citaAdicionada= _appContexto.cita.Add(cita);
+        public Cita AddCita(Cita cita){
+            Cita citaAdicionada= _appContexto.Add(cita).Entity;
             _appContexto.SaveChanges();
-            return citaAdicionada.Entity;
+            return citaAdicionada;
         }
-        void IRepositorioCita.DeleteCita(string Documento){
-            var citaEncontrada= _appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento==Documento);
+         public void DeleteCita(string Documento){
+            Cita citaEncontrada= _appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento == Documento);
             if(citaEncontrada==null){
             return;
             }
             _appContexto.cita.Remove(citaEncontrada);
             _appContexto.SaveChanges();
         }
-        IEnumerable<Cita> IRepositorioCita.GetAllCita(){
-            return _appContexto.cita;
+        public IEnumerable<Cita> GetAllCita(){
+            return _appContexto.cita.Include("cliente").Include("medico").Include("horario").Include("auxiliar");
         }
-        Cita IRepositorioCita.GetCita(string Documento){
-            return _appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento==Documento);
+        public Cita GetCita(string Documento){
+            return  _appContexto.cita.Include("cliente").Include("medico").Include("horario").Include("auxiliar").FirstOrDefault(ci => ci.cliente.Documento == Documento);
+            
         }
-        Cita IRepositorioCita.UpdateCita(Cita cita){
-            var citaEncontrada=_appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento==cita.cliente.Documento);
+        public Cita UpdateCita(Cita cita){
+            Cita citaEncontrada=_appContexto.cita.FirstOrDefault(ci => ci.ID==cita.ID);
             if(citaEncontrada!=null){
                 citaEncontrada.cliente=cita.cliente;
                 citaEncontrada.medico=cita.medico;
                 citaEncontrada.auxiliar=cita.auxiliar;
-                //citaEncontrada.medico.Horario=cita.medico.Horario;
+                citaEncontrada.horario=cita.horario;
                 _appContexto.SaveChanges();
             }
             return citaEncontrada;
 
         }
+        /*public IEnumerable<Horario> GetAllHorario(){
+            return _appContexto.horario;
+        }
+        public IEnumerable<Medico> GetAllMedico(){
+            return _appContexto.medico.Include("horario");
+        }
+        public IEnumerable<Cliente> GetAllCliente(){
+            return _appContexto.cliente;
+        }
+        public IEnumerable<Auxiliar> GetAllAuxiliar(){
+            return _appContexto.auxiliar;
+        }*/
 
     }
 }

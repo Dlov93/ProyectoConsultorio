@@ -24,4 +24,5 @@ namespace Consultorio.App.FrontEnd
                     webBuilder.UseStartup<Startup>();
                 });
     }
-}
+    }
+

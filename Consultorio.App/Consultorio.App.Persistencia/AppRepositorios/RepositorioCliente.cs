@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Consultorio.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace Consultorio.App.Persistencia{
     
@@ -14,16 +15,13 @@ namespace Consultorio.App.Persistencia{
             _appContexto=appContexto;
             security =new Security();
         }
-        Cliente IRepositorioCliente.AddCliente(Cliente cliente){
-            string contraseña = cliente.Contraseña;
-            contraseña += "claxo"+contraseña.Reverse();
-            contraseña = security.GetMD5Hash(contraseña);
-            cliente.Contraseña = contraseña;
-            var clienteAdicionado= _appContexto.cliente.Add(cliente);
+        public Cliente AddCliente(Cliente cliente){
+            cliente.Contraseña = security.GetMD5Hash(cliente.Contraseña);
+            Cliente clienteAdicionado= _appContexto.Add(cliente).Entity;
             _appContexto.SaveChanges();
-            return clienteAdicionado.Entity;
+            return clienteAdicionado;
         }
-        void IRepositorioCliente.DeleteCliente(string Documento){
+        public void DeleteCliente(string Documento){
             var clienteEncontrado= _appContexto.cliente.FirstOrDefault(c => c.Documento==Documento);
             if(clienteEncontrado==null){
             return;
@@ -31,13 +29,14 @@ namespace Consultorio.App.Persistencia{
             _appContexto.cliente.Remove(clienteEncontrado);
             _appContexto.SaveChanges();
         }
-        IEnumerable<Cliente> IRepositorioCliente.GetAllCliente(){
+        public IEnumerable<Cliente> GetAllCliente(){
             return _appContexto.cliente;
         }
-        Cliente IRepositorioCliente.GetCliente(string Documento){
+        public Cliente GetCliente(string Documento){
             return _appContexto.cliente.FirstOrDefault(c => c.Documento==Documento);
         }
-        Cliente IRepositorioCliente.UpdateCliente(Cliente cliente){
+        public Cliente UpdateCliente(Cliente cliente){
+            cliente.Contraseña = security.GetMD5Hash(cliente.Contraseña);
             var clienteEncontrado=_appContexto.cliente.FirstOrDefault(c => c.Documento==cliente.Documento);
             if(clienteEncontrado!=null){
                 clienteEncontrado.Nombre=cliente.Nombre;

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Consultorio.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace Consultorio.App.Persistencia{
     
@@ -12,18 +13,15 @@ namespace Consultorio.App.Persistencia{
         
         public RepositorioAuxiliar(AppContexto appContext){
             _appContext=appContext;
-            security =new Security();
+            security = new Security();
         }
-        Auxiliar IRepositorioAuxiliar.AddAuxiliar(Auxiliar auxiliar){
-            string contraseña = auxiliar.Contraseña;
-            contraseña += "claxo"+contraseña.Reverse();
-            contraseña = security.GetMD5Hash(contraseña);
-            auxiliar.Contraseña = contraseña;
-            var auxiliarAdicionado= _appContext.auxiliar.Add(auxiliar);
+        public Auxiliar AddAuxiliar(Auxiliar auxiliar){
+            auxiliar.Contraseña = security.GetMD5Hash(auxiliar.Contraseña);
+            Auxiliar auxiliarAdicionado= _appContext.Add(auxiliar).Entity;
             _appContext.SaveChanges();
-            return auxiliarAdicionado.Entity;
+            return auxiliarAdicionado;
         }
-        void IRepositorioAuxiliar.DeleteAuxiliar(string Documento){
+        public void DeleteAuxiliar(string Documento){
             var auxiliarEncontrado= _appContext.auxiliar.FirstOrDefault(a => a.Documento==Documento);
             if(auxiliarEncontrado==null){
             return;
@@ -31,13 +29,15 @@ namespace Consultorio.App.Persistencia{
             _appContext.auxiliar.Remove(auxiliarEncontrado);
             _appContext.SaveChanges();
         }
-        IEnumerable<Auxiliar> IRepositorioAuxiliar.GetAllAuxiliar(){
+        public IEnumerable<Auxiliar> GetAllAuxiliar(){
             return _appContext.auxiliar;
         }
-        Auxiliar IRepositorioAuxiliar.GetAuxiliar(string Documento){
+        public Auxiliar GetAuxiliar(string Documento){
             return _appContext.auxiliar.FirstOrDefault(a => a.Documento==Documento);
         }
-        Auxiliar IRepositorioAuxiliar.UpdateAuxiliar(Auxiliar auxiliar){
+        public Auxiliar UpdateAuxiliar(Auxiliar auxiliar){
+            
+            auxiliar.Contraseña = security.GetMD5Hash(auxiliar.Contraseña);
             var auxiliarEncontrado=_appContext.auxiliar.FirstOrDefault(a => a.Documento==auxiliar.Documento);
             if(auxiliarEncontrado!=null){
                 auxiliarEncontrado.Nombre=auxiliar.Nombre;
