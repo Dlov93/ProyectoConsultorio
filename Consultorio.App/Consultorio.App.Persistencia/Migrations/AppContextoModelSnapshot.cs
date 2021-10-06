@@ -167,15 +167,13 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("HorarioID")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("Horario")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("RegistroRethus")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
-
-                    b.HasIndex("HorarioID");
 
                     b.HasDiscriminator().HasValue("Medico");
                 });
@@ -199,15 +197,6 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("cliente");
 
                     b.Navigation("medico");
-                });
-
-            modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>
-                {
-                    b.HasOne("Consultorio.App.Dominio.Horario", "Horario")
-                        .WithMany()
-                        .HasForeignKey("HorarioID");
-
-                    b.Navigation("Horario");
                 });
 #pragma warning restore 612, 618
         }

@@ -43,17 +43,11 @@ namespace Consultorio.App.Persistencia.Migrations
                     Especialidad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Codigo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     RegistroRethus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    HorarioID = table.Column<int>(type: "int", nullable: true)
+                    Horario = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_persona", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_persona_horario_HorarioID",
-                        column: x => x.HorarioID,
-                        principalTable: "horario",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -109,11 +103,6 @@ namespace Consultorio.App.Persistencia.Migrations
                 table: "persona",
                 column: "Documento",
                 unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_persona_HorarioID",
-                table: "persona",
-                column: "HorarioID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -122,10 +111,10 @@ namespace Consultorio.App.Persistencia.Migrations
                 name: "cita");
 
             migrationBuilder.DropTable(
-                name: "persona");
+                name: "horario");
 
             migrationBuilder.DropTable(
-                name: "horario");
+                name: "persona");
         }
     }
 }

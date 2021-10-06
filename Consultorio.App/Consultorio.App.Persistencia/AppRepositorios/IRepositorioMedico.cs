@@ -6,6 +6,7 @@ namespace Consultorio.App.Persistencia{
         IEnumerable<Medico> GetAllMedico();
         Medico AddMedico(Medico medico);
         Medico UpdateMedico(Medico medico);
+        Medico AddHorario(Medico hora);
         void DeleteMedico(string Documento);
         Medico GetMedico(string Documento);
     }

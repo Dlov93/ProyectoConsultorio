@@ -12,7 +12,7 @@ namespace Consultorio.App.Dominio{
          /// Registro Unico Nacional del Talento Humano 
         public string RegistroRethus { get; set; }
        
-        public Horario Horario{ get; set;}
+        public DateTime Horario { get; set;}
 
     }
 

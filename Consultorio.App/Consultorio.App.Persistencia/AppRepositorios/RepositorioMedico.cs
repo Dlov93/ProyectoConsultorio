@@ -56,5 +56,24 @@ namespace Consultorio.App.Persistencia{
 
         }
 
+        Medico IRepositorioMedico.AddHorario(Medico hora){
+            var medicoEncontrado=_appContext.medico.FirstOrDefault(m => m.Documento==hora.Documento);
+            if(medicoEncontrado!=null){
+                // medicoEncontrado.Nombre=medico.Nombre;
+                // medicoEncontrado.Apellido=medico.Apellido;
+                // medicoEncontrado.Genero = medico.Genero;
+                // medicoEncontrado.Telefono=medico.Telefono;
+                // medicoEncontrado.Codigo= medico.Codigo;
+                // medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
+                // medicoEncontrado.UserName= medico.UserName;
+                // medicoEncontrado.Correo= medico.Correo;
+                // medicoEncontrado.Contraseña=medico.Contraseña;
+                medicoEncontrado.Horario= hora.Horario;
+                _appContext.SaveChanges();
+            }
+            return medicoEncontrado;
+
+        }
+
     }
 }

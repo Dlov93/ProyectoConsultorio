@@ -4,25 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Consultorio.App.Dominio;
 using Consultorio.App.Persistencia;
+using Consultorio.App.Dominio;
 
 namespace MyApp.Namespace
 {
-    public class CrearMedicoModel : PageModel
+    public class CrearHorarioMedicoModel : PageModel
     {
         private readonly IRepositorioMedico repositorioMedico;
         public Medico medico{get; set;}
-        public IEnumerable<Medico> medicos {get; set;}
-        public CrearMedicoModel(IRepositorioMedico repositorioMedico)
+        public CrearHorarioMedicoModel(IRepositorioMedico repositorioMedico)
         {
             this.repositorioMedico = repositorioMedico;
         }
-        public void OnGet()
+        public void OnGet(string Documento)
         {
-            medico = new Medico();
+            medico = repositorioMedico.GetMedico(Documento);
         }
-
         public IActionResult OnPost(Medico medico)
         {
             try
@@ -31,8 +29,8 @@ namespace MyApp.Namespace
                 {
                     return Page();
                 }
-                
-                repositorioMedico.AddMedico(medico);
+
+                repositorioMedico.AddHorario(medico);
                 return RedirectToPage("./Medico");
             }
             catch
