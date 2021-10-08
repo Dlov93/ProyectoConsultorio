@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System;
 namespace Consultorio.App.Dominio{
 public class Persona{
@@ -20,6 +21,8 @@ public class Persona{
     public string Correo{get; set;}
     [Required,DataType(DataType.Password)]
     public string Contraseña{get; set;}
+    [NotMapped]
+    public string NombreCompleto{ get { return this.Nombre + " " + this.Apellido; } }
     
 
 
