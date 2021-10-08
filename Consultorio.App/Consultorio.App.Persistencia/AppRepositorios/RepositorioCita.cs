@@ -26,10 +26,10 @@ namespace Consultorio.App.Persistencia{
             _appContexto.SaveChanges();
         }
         public IEnumerable<Cita> GetAllCita(){
-            return _appContexto.cita.Include("cliente").Include("medico").Include("horario").Include("auxiliar");
+            return _appContexto.cita.Include("cliente").Include("medico")/*.Include("horario")*/.Include("auxiliar");
         }
         public Cita GetCita(string Documento){
-            return  _appContexto.cita.Include("cliente").Include("medico").Include("horario").Include("auxiliar").FirstOrDefault(ci => ci.cliente.Documento == Documento);
+            return  _appContexto.cita.Include("cliente").Include("medico")/*.Include("horario")*/.Include("auxiliar").FirstOrDefault(ci => ci.cliente.Documento == Documento);
             
         }
         public Cita UpdateCita(Cita cita){
@@ -38,7 +38,7 @@ namespace Consultorio.App.Persistencia{
                 citaEncontrada.cliente=cita.cliente;
                 citaEncontrada.medico=cita.medico;
                 citaEncontrada.auxiliar=cita.auxiliar;
-                citaEncontrada.horario=cita.horario;
+                //citaEncontrada.horario=cita.horario;
                 _appContexto.SaveChanges();
             }
             return citaEncontrada;
