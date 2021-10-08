@@ -58,18 +58,11 @@ namespace Consultorio.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     clienteID = table.Column<int>(type: "int", nullable: true),
                     medicoID = table.Column<int>(type: "int", nullable: true),
-                    horarioID = table.Column<int>(type: "int", nullable: true),
                     auxiliarID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_cita", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_cita_horario_horarioID",
-                        column: x => x.horarioID,
-                        principalTable: "horario",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_cita_persona_auxiliarID",
                         column: x => x.auxiliarID,
@@ -99,11 +92,6 @@ namespace Consultorio.App.Persistencia.Migrations
                 name: "IX_cita_clienteID",
                 table: "cita",
                 column: "clienteID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_cita_horarioID",
-                table: "cita",
-                column: "horarioID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_cita_medicoID",
