@@ -2,8 +2,18 @@
 @model MyApp.Namespace.EliminarCitaModel
 @{
 }
+<h1>Confirmacion</h1>
+<p>Porfavor Digite el Codigo de la cita que desea Eliminar </p>
+<form method="post" class="mt-3">
+    <input  type="int" asp-for="@Model.ID">
+    <button type="submit" class="btn btn-primary">Si</button>
+    <a asp-page="./CitasAgendadas" class="btn btn-primary">No</a>
+    
+</form>
+<!--
 <h1>Eliminar Cita</h1>
 <div class="form-group row">
         <button type="submit" class="btn btn-primary">Eliminar</button>
         <a asp-page="./CitasAgendadas" class="btn btn-primary">Cancelar</a>
     </div>
+    -->

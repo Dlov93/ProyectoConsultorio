@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    public partial class A : Migration
+    public partial class jl : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

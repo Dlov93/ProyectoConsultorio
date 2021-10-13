@@ -8,6 +8,7 @@
 
 <table class="table table-bordered table-striped">
     <tr>
+        <th>Codigo</th>
         <th>Cliente</th>
         <th>Medico</th>
         <th>Auxiliar</th>
@@ -17,6 +18,7 @@
     </tr>
     @foreach(var cita in @Model.citas){
         <tr>
+            <td>@cita.ID</td>
             <td>@cita.cliente.NombreCompleto</td>
             <td>@cita.medico.NombreCompleto</td>
             <td>@cita.auxiliar.NombreCompleto</td>
@@ -25,11 +27,11 @@
             <td>
                      <a class="btn btn-primary table-btn" asp-page="../Cita/AgendarCita" asp-route-documento="@Model.citas">Detalle</a> 
                      <a class="btn btn-primary table-btn" asp-page="../Cita/EditarCita" asp-route-documento="@Model.citas">Editar</a> 
-                     <a class="btn btn-primary table-btn" asp-page="../Cita/EliminarCita" asp-route-documento="@Model.citas">Eliminar</a> 
             </td>
         </tr>
     }
 </table>
+<a class="btn btn-primary table-btn" asp-page="../Cita/EliminarCita" asp-route-documento="@Model.citas">Eliminar</a> 
 
        
 
