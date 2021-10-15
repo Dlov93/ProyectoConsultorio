@@ -48,21 +48,28 @@ namespace Consultorio.App.Persistencia.Migrations
 
             modelBuilder.Entity("Consultorio.App.Dominio.Horario", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<DateTime>("FechaDisponible")
+                    b.Property<int>("Dia")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Hora_Final")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NameH")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("Hora_Inicio")
+                        .HasColumnType("datetime2");
 
-                    b.HasKey("ID");
+                    b.Property<int?>("MedicoID")
+                        .HasColumnType("int");
 
-                    b.ToTable("horario");
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicoID");
+
+                    b.ToTable("horarios");
                 });
 
             modelBuilder.Entity("Consultorio.App.Dominio.Persona", b =>
@@ -167,9 +174,6 @@ namespace Consultorio.App.Persistencia.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime>("Horario")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("RegistroRethus")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -197,6 +201,18 @@ namespace Consultorio.App.Persistencia.Migrations
                     b.Navigation("cliente");
 
                     b.Navigation("medico");
+                });
+
+            modelBuilder.Entity("Consultorio.App.Dominio.Horario", b =>
+                {
+                    b.HasOne("Consultorio.App.Dominio.Medico", null)
+                        .WithMany("Horarios")
+                        .HasForeignKey("MedicoID");
+                });
+
+            modelBuilder.Entity("Consultorio.App.Dominio.Medico", b =>
+                {
+                    b.Navigation("Horarios");
                 });
 #pragma warning restore 612, 618
         }

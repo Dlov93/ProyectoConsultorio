@@ -1,0 +1,14 @@
+@page
+@model MyApp.Namespace.DetalleHorarioModel
+@{
+}
+<h1>Detalle Horario</h1>
+
+<ul>
+    <li>Dia: @Model.horario.Dia</li>
+    <li>Hora_Inicio: @Model.horario.Hora_Inicio</li>
+    <li>Hora_Final: @Model.horario.Hora_Final</li>
+    <div class="form-group row">
+        <a asp-page="./Horario" class="btn btn-primary">Atras</a>
+    </div>
+</ul>

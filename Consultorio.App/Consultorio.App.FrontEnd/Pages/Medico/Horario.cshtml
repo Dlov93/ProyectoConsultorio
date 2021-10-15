@@ -1,0 +1,29 @@
+@page
+@model Consultorio.App.FrontEnd.Pages.HorarioModel
+@{
+}
+<h1>Horarios registrados</h1>
+<a class="btn btn-primary table-btn" asp-page="./CrearHorario">Añadir Horario</a>
+<table class="table table-info table-bordered table-striped">
+    <thead>
+        <th>Medico</th>
+        <th>Dia</th>
+        <th>Hora inicio</th>
+        <th>Hora final</th>
+    </thead>
+    <tbody>
+        @foreach(var medico in Model.Medicos){
+            @foreach(var horario in medico.Horarios){
+                <tr>
+                    <td>@medico.Nombre</td>
+                    <td>@horario.Dia</td>
+                    <td>@horario.Hora_Inicio.ToString("hh:mm")</td>
+                    <td>@horario.Hora_Final.ToString("hh:mm")</td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./DetalleHorario" asp-route-id="@horario.Id">Detalle</a></td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./EditarHorario" asp-route-id="@horario.Id">Editar</a> </td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./BorrarHorario" asp-route-id="@horario.Id">Borrar</a> </td>
+                </tr>
+            }
+        }
+    </tbody>
+</Table>

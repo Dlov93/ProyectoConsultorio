@@ -1,0 +1,29 @@
+@page
+@model MyApp.Namespace.EditarHorarioModel
+@{
+}
+@using Consultorio.App.Dominio
+<h1>Editar Horario</h1>
+<form method="post" class="mt-3">
+    <input hidden asp-for="horario.Id"/>
+    <div class="form-group row">
+        <label asp-for="horario.Dia" class="col-sm-2"></label>
+        <div class="col-sm-10">
+            <select asp-for="horario.Dia" asp-items="Html.GetEnumSelectList<Dia>()"></select>
+            <option value="-"></option>
+    </div>
+    <div class="form-group row">
+        <label asp-for="horario.Hora_Inicio" class="col-sm-2"></label>
+        <input asp-for="horario.Hora_Inicio" class="form-control">
+        <Span class="text-danger" asp-Validation-for="horario.Hora_Inicio"></Span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="horario.Hora_Final" class="col-sm-2"></label>
+        <input asp-for="horario.Hora_Final" class="form-control">
+        <Span class="text-danger" asp-Validation-for="horario.Hora_Final"></Span>
+    </div>
+    <div class="form-group row">
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <a asp-page="./Horario" class="btn btn-primary">Cancelar</a>
+    </div>
+</form>

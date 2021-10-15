@@ -9,29 +9,35 @@ using Consultorio.App.Dominio;
 
 namespace MyApp.Namespace
 {
-    public class BorrarHorarioModel : PageModel
+    public class EditarHorarioModel : PageModel
     {
         private readonly IRepositorioHorario repositorioHorario;
         public Horario horario{get; set;}
-        public BorrarHorarioModel(IRepositorioHorario repositorioHorario)
+        public EditarHorarioModel(IRepositorioHorario repositorioHorario)
         {
             this.repositorioHorario = repositorioHorario;
         }
-        public void OnGet(string NameH)
+        public void OnGet(int Id)
         {
-            horario = repositorioHorario.GetHorario(NameH);
-            
+            horario = repositorioHorario.GetHorario(Id);
         }
-        public IActionResult OnPost(string NameH){
-            
-           try{
-               
-                repositorioHorario.DeleteHorario(NameH);
+        public IActionResult OnPost(Horario horario)
+        {
+            try
+            {
+                if(!ModelState.IsValid)
+                {
+                    return Page();
+                }
+
+                repositorioHorario.UpdateHorario(horario);
                 return RedirectToPage("./Horario");
-           }
-            catch{
+            }
+            catch
+            {
                 return RedirectToPage("../Error");
             }
+            
         }
     }
 }

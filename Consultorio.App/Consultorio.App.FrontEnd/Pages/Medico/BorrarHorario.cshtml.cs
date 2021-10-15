@@ -1,4 +1,3 @@
-using System.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +9,22 @@ using Consultorio.App.Dominio;
 
 namespace MyApp.Namespace
 {
-    public class DetalleHorarioModel : PageModel
+    public class BorrarHorarioModel : PageModel
     {
         private readonly IRepositorioHorario repositorioHorario;
-        public Horario horario{get;set;}
-        public DetalleHorarioModel(IRepositorioHorario repositorioHorario)
+        public Horario horario{get; set;}
+        public BorrarHorarioModel(IRepositorioHorario repositorioHorario)
         {
             this.repositorioHorario = repositorioHorario;
         }
-        public void OnGet(string NameH)
+        public void OnGet(int Id)
         {
-            horario = repositorioHorario.GetHorario(NameH);
+            horario = repositorioHorario.GetHorario(Id);
+        }
+        public IActionResult OnPost(int Id)
+        {
+            repositorioHorario.DeleteHorario(Id);
+            return RedirectToPage("./Horario");
         }
     }
 }

@@ -4,11 +4,10 @@ namespace Consultorio.App.Persistencia{
     
     public interface IRepositorioHorario{
         IEnumerable<Horario> GetAllHorario();
-        Horario AddHorario(Horario horario);
+        void AddHorario(Horario Horario, int IdMedico);
         Horario UpdateHorario(Horario horario);
-        void DeleteHorario(string NameH);
-        Horario GetHorario(string NameH);
+        void DeleteHorario(int Id);
+        Horario GetHorario(int Id);
     }
-    
-        
-    }
+
+}

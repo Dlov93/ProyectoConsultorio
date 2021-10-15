@@ -1,0 +1,29 @@
+@page
+@model Consultorio.App.FrontEnd.Pages.CrearHorarioModel
+@using Consultorio.App.Dominio
+@{
+}
+<h1>Crear Horario</h1>
+<form method="post" class="mt-3">
+    <div class="form-group row">
+        <label asp-for="CedulaMedico" class="form-control">Medico</label>
+        <select class="form-control" asp-for="CedulaMedico" asp-items="@Model.Medicos"></select>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Horario.Dia" class="form-control">Dia</label>
+        <select class="form-control" asp-for="Horario.Dia" asp-items="Html.GetEnumSelectList<Dia>()"></select>
+        <span asp-validation-for="Horario.Dia" class="text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Horario.Hora_Inicio" class="form-control">Hora de inicio</label>
+        <input asp-for="Horario.Hora_Inicio" class="form-control">
+        <span asp-validation-for="Horario.Hora_Inicio" class="text-danger"></span>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Horario.Hora_Final" class="form-control">Hora de Finalizacion</label>
+        <input asp-for="Horario.Hora_Final" class="form-control">
+        <span asp-validation-for="Horario.Hora_Final" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-page="./CrearHorario" class="btn btn-primary">Cancelar</a>
+</form>

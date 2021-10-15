@@ -23,7 +23,6 @@ namespace MyApp.Namespace
         {
             this.repositorioMedico = repositorioMedico;
             this.repositorioHorario = repositorioHorario;
-            horario = repositorioHorario.GetAllHorario();
         }
         public void OnGet()
         {
