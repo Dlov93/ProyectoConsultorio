@@ -406,13 +406,10 @@ C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\C
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cita\AgendarCita.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cita\EditarCita.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Cita\EliminarCita.cshtml.g.cs
-<<<<<<< HEAD
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\CrearHorario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\Horario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\DetalleHorario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\EditarHorario.cshtml.g.cs
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\BorrarHorario.cshtml.g.cs
-=======
-C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\CrearHorarioMedico.cshtml.g.cs
 C:\Users\Diana\Desktop\clases\programacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Medico\CrearHorarioMedico.cshtml.g.cs
 >>>>>>> 9304fd544f3273e3d96ca5a77bde2505a0e86b1f

@@ -10,13 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Consultorio.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContexto))]
-<<<<<<< HEAD:Consultorio.App/Consultorio.App.Persistencia/Migrations/20211014214729_A.Designer.cs
-    [Migration("20211014214729_A")]
+    [Migration("20211015232903_A")]
     partial class A
-=======
-    [Migration("20211012003224_jl")]
-    partial class jl
->>>>>>> 9304fd544f3273e3d96ca5a77bde2505a0e86b1f:Consultorio.App/Consultorio.App.Persistencia/Migrations/20211012003224_jl.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
