@@ -17,8 +17,8 @@ namespace Consultorio.App.Persistencia{
             _appContexto.SaveChanges();
             return citaAdicionada;
         }
-         public void DeleteCita(string Documento){
-            Cita citaEncontrada= _appContexto.cita.FirstOrDefault(ci => ci.cliente.Documento == Documento);
+         public void DeleteCita(int ID){
+            Cita citaEncontrada= _appContexto.cita.FirstOrDefault(ci => ci.ID == ID);
             if(citaEncontrada==null){
             return;
             }
@@ -28,8 +28,8 @@ namespace Consultorio.App.Persistencia{
         public IEnumerable<Cita> GetAllCita(){
             return _appContexto.cita.Include("cliente").Include("medico")/*.Include("horario")*/.Include("auxiliar");
         }
-        public Cita GetCita(string Documento){
-            return  _appContexto.cita.Include("cliente").Include("medico")/*.Include("horario")*/.Include("auxiliar").FirstOrDefault(ci => ci.cliente.Documento == Documento);
+        public Cita GetCita(int ID){
+            return  _appContexto.cita.Include("cliente").Include("medico")/*.Include("horario")*/.Include("auxiliar").FirstOrDefault(ci => ci.ID == ID);
             
         }
         public Cita UpdateCita(Cita cita){

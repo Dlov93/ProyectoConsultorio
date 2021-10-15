@@ -24,9 +24,9 @@ namespace MyApp.Namespace
             Console.WriteLine(Documento);
         }
         public IActionResult OnPost(string Documento){
-             Console.WriteLine(Documento);
+             
            try{
-                Console.WriteLine(Documento);
+                
                 repositorioCliente.DeleteCliente(Documento);
                 return RedirectToPage("./Cliente");
            }
