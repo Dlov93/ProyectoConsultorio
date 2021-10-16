@@ -9,34 +9,44 @@ namespace Consultorio.App.Persistencia{
         private readonly AppContexto _appContext;
         
         public RepositorioHorario (AppContexto appContext){
-            _appContext=appContext;
+            this._appContext = appContext;
         }
-        public Horario AddHorario(Horario horario){
-            Horario horarioAdicionado = _appContext.Add(horario).Entity;
+        public void AddHorario(Horario Horario, int IdMedico){
+            Medico Medico = _appContext.medico.FirstOrDefault(m=>m.ID == IdMedico);
+
+            List<Horario> horarios = Medico.Horarios;
+            horarios.Add(Horario);
+            Medico.Horarios = horarios;
+
             _appContext.SaveChanges();
-            return horarioAdicionado;
         }
-        public void DeleteHorario(string NameH){
-            var HorarioEncontrado= _appContext.horario.FirstOrDefault(h => h.NameH==NameH);
+
+        public void DeleteHorario(int Id){
+            Horario HorarioEncontrado= _appContext.horarios.FirstOrDefault(m => m.Id==Id);
             if(HorarioEncontrado==null){
             return;
             }
-            _appContext.horario.Remove(HorarioEncontrado);
+            _appContext.horarios.Remove(HorarioEncontrado);
             _appContext.SaveChanges();
         }
+
         public IEnumerable<Horario> GetAllHorario(){
-            return _appContext.horario;
+            return _appContext.horarios;
         }
-        public Horario GetHorario(string NameH){
-            return _appContext.horario.FirstOrDefault(h => h.NameH==NameH);
+
+        public Horario GetHorario(int Id){
+            return _appContext.horarios.FirstOrDefault(m => m.Id==Id);
         }
+
         public Horario UpdateHorario(Horario horario){
-            var horarioEncontrado=_appContext.horario.FirstOrDefault(h => h.NameH == horario.NameH);
-            if(horarioEncontrado!=null){
-                horarioEncontrado.FechaDisponible=horario.FechaDisponible;
+            Horario HorarioEncontrado=_appContext.horarios.FirstOrDefault(m => m.Id==horario.Id);
+            if(HorarioEncontrado!=null){
+                HorarioEncontrado.Dia=horario.Dia;
+                HorarioEncontrado.Hora_Inicio=horario.Hora_Inicio;
+                HorarioEncontrado.Hora_Final = horario.Hora_Final;
                 _appContext.SaveChanges();
             }
-            return horarioEncontrado;
+            return HorarioEncontrado;
 
         }
 

@@ -3,24 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Consultorio.App.Persistencia.Migrations
 {
-    public partial class jl : Migration
+    public partial class A : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "horario",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NameH = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FechaDisponible = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_horario", x => x.ID);
-                });
-
             migrationBuilder.CreateTable(
                 name: "persona",
                 columns: table => new
@@ -42,8 +28,7 @@ namespace Consultorio.App.Persistencia.Migrations
                     FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Especialidad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     Codigo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    RegistroRethus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    Horario = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    RegistroRethus = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -83,6 +68,28 @@ namespace Consultorio.App.Persistencia.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "horarios",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Dia = table.Column<int>(type: "int", nullable: false),
+                    Hora_Inicio = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Hora_Final = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    MedicoID = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_horarios", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_horarios_persona_MedicoID",
+                        column: x => x.MedicoID,
+                        principalTable: "persona",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_cita_auxiliarID",
                 table: "cita",
@@ -99,6 +106,11 @@ namespace Consultorio.App.Persistencia.Migrations
                 column: "medicoID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_horarios_MedicoID",
+                table: "horarios",
+                column: "MedicoID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_persona_Documento",
                 table: "persona",
                 column: "Documento",
@@ -111,7 +123,7 @@ namespace Consultorio.App.Persistencia.Migrations
                 name: "cita");
 
             migrationBuilder.DropTable(
-                name: "horario");
+                name: "horarios");
 
             migrationBuilder.DropTable(
                 name: "persona");

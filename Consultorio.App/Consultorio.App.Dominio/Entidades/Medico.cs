@@ -12,8 +12,8 @@ namespace Consultorio.App.Dominio{
          [Required(ErrorMessage="Registro Rethus es requerido"), StringLength(20,MinimumLength=5,ErrorMessage="Por favor digite su Registro Rethus")]
          /// Registro Unico Nacional del Talento Humano 
         public string RegistroRethus { get; set; }
-       
-        public DateTime Horario { get; set;}
+        
+        public List<Horario> Horarios { get; set; }
 
     }
 

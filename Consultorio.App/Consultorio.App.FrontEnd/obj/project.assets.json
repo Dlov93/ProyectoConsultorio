@@ -8947,11 +8947,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\gilbe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\": {}
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
       "projectName": "Consultorio.App.FrontEnd",
       "projectPath": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
@@ -8960,6 +8965,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gilbe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
+      "projectName": "Consultorio.App.FrontEnd",
+      "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\Consultorio.App.FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.FrontEnd\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\JUAN SEBASTIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8970,11 +8985,19 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
               "projectPath": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj"
             },
             "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
               "projectPath": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj"
+=======
+            "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj"
+            },
+            "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Persistencia\\Consultorio.App.Persistencia.csproj"
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
             }
           }
         }
@@ -9029,7 +9052,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
       }
     }
   }

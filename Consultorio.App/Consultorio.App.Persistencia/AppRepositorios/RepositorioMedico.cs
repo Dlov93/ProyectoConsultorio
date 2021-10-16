@@ -18,6 +18,8 @@ namespace Consultorio.App.Persistencia{
         public Medico AddMedico(Medico medico){
             medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
             Medico medicoAdicionado= _appContext.Add(medico).Entity;
+
+            medico.Horarios = new List<Horario>();
             _appContext.SaveChanges();
             return medicoAdicionado;
         }
@@ -30,10 +32,10 @@ namespace Consultorio.App.Persistencia{
             _appContext.SaveChanges();
         }
         public IEnumerable<Medico> GetAllMedico(){
-            return _appContext.medico;
+            return _appContext.medico.Include("Horarios");
         }
         public Medico GetMedico(string Documento){
-            return _appContext.medico.FirstOrDefault(m => m.Documento==Documento);
+            return _appContext.medico.Include("Horarios").FirstOrDefault(m => m.Documento==Documento);
         }
         public Medico UpdateMedico(Medico medico){
             medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
@@ -45,33 +47,9 @@ namespace Consultorio.App.Persistencia{
                 medicoEncontrado.Telefono=medico.Telefono;
                 medicoEncontrado.Codigo= medico.Codigo;
                 medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
-                medicoEncontrado.Horario= medico.Horario;
                 medicoEncontrado.UserName= medico.UserName;
                 medicoEncontrado.Correo= medico.Correo;
                 medicoEncontrado.Contraseña=medico.Contraseña;
-                _appContext.SaveChanges();
-            }
-            return medicoEncontrado;
-
-        }
-        /*public IEnumerable<Horario> GetAllHorario(){
-            return _appContext.horario;
-        }*/
-
-
-        Medico IRepositorioMedico.AddHorario(Medico hora){
-            var medicoEncontrado=_appContext.medico.FirstOrDefault(m => m.Documento==hora.Documento);
-            if(medicoEncontrado!=null){
-                // medicoEncontrado.Nombre=medico.Nombre;
-                // medicoEncontrado.Apellido=medico.Apellido;
-                // medicoEncontrado.Genero = medico.Genero;
-                // medicoEncontrado.Telefono=medico.Telefono;
-                // medicoEncontrado.Codigo= medico.Codigo;
-                // medicoEncontrado.RegistroRethus = medico.RegistroRethus ;
-                // medicoEncontrado.UserName= medico.UserName;
-                // medicoEncontrado.Correo= medico.Correo;
-                // medicoEncontrado.Contraseña=medico.Contraseña;
-                medicoEncontrado.Horario= hora.Horario;
                 _appContext.SaveChanges();
             }
             return medicoEncontrado;

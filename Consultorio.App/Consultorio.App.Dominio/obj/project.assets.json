@@ -111,11 +111,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\gilbe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\": {}
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
       "projectName": "Consultorio.App.Dominio",
       "projectPath": "C:\\c#\\ProyectoConsultorio\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
@@ -124,6 +129,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gilbe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+      "projectName": "Consultorio.App.Dominio",
+      "projectPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\Consultorio.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\JUAN SEBASTIAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JUAN SEBASTIAN\\Documents\\ProyectoHospitalizacion\\ProyectoConsultorio\\Consultorio.App\\Consultorio.App.Dominio\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\JUAN SEBASTIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -160,12 +175,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "NETStandard.Library.Ref",
+            "version": "[2.1.0, 2.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "NETStandard.Library": {
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+>>>>>>> 2d1e42bb110e3f6e4e87f2cd1c9a2709aa18d2d0
       }
     }
   }
