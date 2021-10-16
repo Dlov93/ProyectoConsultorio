@@ -26,13 +26,26 @@ namespace Consultorio.App.FrontEnd
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            //services.AddRazorPages();
+
+            services.AddRazorPages(
+                options => {
+                    options.Conventions.AuthorizePage("/Index");
+                    options.Conventions.AuthorizeFolder("/Saludos");
+
+                    options.Conventions.AllowAnonymousToPage("/Privacy");
+                }
+            );
+
+
             AppContexto _contexto = new AppContexto();
             services.AddSingleton<IRepositorioCliente>(new RepositorioCliente(_contexto));
             services.AddSingleton<IRepositorioMedico>(new RepositorioMedico(_contexto));
             services.AddSingleton<IRepositorioAuxiliar>(new RepositorioAuxiliar(_contexto));
             services.AddSingleton<IRepositorioCita>(new RepositorioCita(_contexto));
             services.AddSingleton<IRepositorioHorario>(new RepositorioHorario(_contexto));
+
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +66,8 @@ namespace Consultorio.App.FrontEnd
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

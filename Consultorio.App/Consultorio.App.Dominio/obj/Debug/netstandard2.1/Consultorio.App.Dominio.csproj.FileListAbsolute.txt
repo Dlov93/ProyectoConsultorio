@@ -38,3 +38,12 @@ C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Co
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.deps.json
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csprojAssemblyReference.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfoInputs.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.AssemblyInfo.cs
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.csproj.CoreCompileInputs.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Dominio\obj\Debug\netstandard2.1\Consultorio.App.Dominio.pdb

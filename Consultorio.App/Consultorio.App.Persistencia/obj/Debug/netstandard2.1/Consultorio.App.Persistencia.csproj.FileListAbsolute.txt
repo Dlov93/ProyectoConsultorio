@@ -50,3 +50,15 @@ C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Co
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CopyComplete
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
 C:\Users\JUAN SEBASTIAN\Documents\ProyectoHospitalizacion\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.deps.json
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.dll
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\bin\Debug\netstandard2.1\Consultorio.App.Dominio.pdb
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csprojAssemblyReference.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfoInputs.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.AssemblyInfo.cs
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.csproj.CopyComplete
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.dll
+C:\c#\ProyectoConsultorio\ProyectoConsultorio\Consultorio.App\Consultorio.App.Persistencia\obj\Debug\netstandard2.1\Consultorio.App.Persistencia.pdb
