@@ -13,20 +13,16 @@ namespace MyApp.Namespace
     public class CitasAgendadasModel : PageModel
     {             
         private readonly IRepositorioCita repositorioCita;
-
-        public IEnumerable<Cita> citas;
+        public IEnumerable<Cita> citas{get; set;}
 
         public CitasAgendadasModel(IRepositorioCita repositorioCita)
         {
             this.repositorioCita = repositorioCita;
-            citas = repositorioCita.GetAllCita();
+            citas = repositorioCita.GetAllCitas();
         }
-        
-
-        
+                
         public void OnGet()
         {
-            //citas = repositorioCita.GetAllCita();
             
         }
     }

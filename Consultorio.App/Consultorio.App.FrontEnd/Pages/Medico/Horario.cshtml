@@ -13,15 +13,15 @@
     </thead>
     <tbody>
         @foreach(var medico in Model.Medicos){
-            @foreach(var horario in medico.Horarios){
+            @foreach(var horario in medico.Horario){
                 <tr>
                     <td>@medico.Nombre</td>
                     <td>@horario.Dia</td>
                     <td>@horario.Hora_Inicio.ToString("hh:mm")</td>
                     <td>@horario.Hora_Final.ToString("hh:mm")</td>
-                    <td><a class="btn btn-primary table-btn" asp-page="./DetalleHorario" asp-route-id="@horario.Id">Detalle</a></td>
-                    <td><a class="btn btn-primary table-btn" asp-page="./EditarHorario" asp-route-id="@horario.Id">Editar</a> </td>
-                    <td><a class="btn btn-primary table-btn" asp-page="./BorrarHorario" asp-route-id="@horario.Id">Borrar</a> </td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./DetalleHorario" asp-route-id="@horario.ID">Detalle</a></td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./EditarHorario" asp-route-id="@horario.ID">Editar</a> </td>
+                    <td><a class="btn btn-primary table-btn" asp-page="./BorrarHorario" asp-route-id="@horario.ID">Borrar</a> </td>
                 </tr>
             }
         }

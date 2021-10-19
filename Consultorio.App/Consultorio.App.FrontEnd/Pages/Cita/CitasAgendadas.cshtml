@@ -13,21 +13,21 @@
         <th>Medico</th>
         <th>Auxiliar</th>
         <th>Dia</th>
-        <th>Hora</th>
+        <th>Hora</th>        
+        <th>Sala</th>
+        <th>Descripción</th>
         <th></th>
     </tr>
     @foreach(var cita in @Model.citas){
         <tr>
             <td>@cita.ID</td>
-            <td>@cita.cliente.NombreCompleto</td>
-            <td>@cita.medico.NombreCompleto</td>
-            <td>@cita.auxiliar.NombreCompleto</td>
-            <td>Dia</td>
-            <td>Hora</td>
-            <td>
-                     <a class="btn btn-primary table-btn" asp-page="../Cita/AgendarCita" asp-route-documento="@Model.citas">Detalle</a> 
-                     <a class="btn btn-primary table-btn" asp-page="../Cita/EditarCita" asp-route-documento="@Model.citas">Editar</a> 
-            </td>
+            <td>@cita.Cliente.NombreCompleto</td>
+            <td>@cita.Medico.NombreCompleto</td>
+            <td>@cita.Auxiliar.NombreCompleto</td>
+            <td>@cita.Dia.ToString("yyyy-MM-dd")</td>
+            <td>@cita.Hora.ToString("hh:mm")</td>
+            <td>@cita.Sala</td>
+            <td>@cita.Descripcion</td>            
         </tr>
     }
 </table>

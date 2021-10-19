@@ -13,16 +13,13 @@ namespace MyApp.Namespace
     public class MedicoModel : PageModel
     {
         private readonly IRepositorioMedico repositorioMedico;
-        private readonly IRepositorioHorario repositorioHorario;
+        
         public IEnumerable<Medico> medico {get; set;}
-        public IEnumerable<Horario> horario {get; set;}
-        //public Medico medico{get; set;}
-        public Horario horarios {get; set;}
-        public string NameH {get;set;}
-        public MedicoModel(IRepositorioMedico repositorioMedico,IRepositorioHorario repositorioHorario)
+        
+        public MedicoModel(IRepositorioMedico repositorioMedico)
         {
             this.repositorioMedico = repositorioMedico;
-            this.repositorioHorario = repositorioHorario;
+            
         }
         public void OnGet()
         {

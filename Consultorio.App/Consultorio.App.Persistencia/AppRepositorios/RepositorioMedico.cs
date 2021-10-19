@@ -19,7 +19,7 @@ namespace Consultorio.App.Persistencia{
             medico.Contraseña = security.GetMD5Hash(medico.Contraseña);
             Medico medicoAdicionado= _appContext.Add(medico).Entity;
 
-            medico.Horarios = new List<Horario>();
+            medico.Horario = new List<Horario>();
             _appContext.SaveChanges();
             return medicoAdicionado;
         }
@@ -32,10 +32,10 @@ namespace Consultorio.App.Persistencia{
             _appContext.SaveChanges();
         }
         public IEnumerable<Medico> GetAllMedico(){
-            return _appContext.medico.Include("Horarios");
+            return _appContext.medico.Include("Horario");
         }
         public Medico GetMedico(string Documento){
-            return _appContext.medico.Include("Horarios").FirstOrDefault(m => m.Documento==Documento);
+            return _appContext.medico.Include("Horario").FirstOrDefault(m => m.Documento==Documento);
         }
         public Medico UpdateMedico(Medico medico){
             medico.Contraseña = security.GetMD5Hash(medico.Contraseña);

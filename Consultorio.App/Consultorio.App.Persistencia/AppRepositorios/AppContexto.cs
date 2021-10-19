@@ -11,7 +11,7 @@ namespace Consultorio.App.Persistencia {
         public DbSet<Medico> medico {get; set;}
         public DbSet<Auxiliar> auxiliar {get; set;}
         public DbSet<Cita> cita {get; set;}
-        public DbSet<Horario> horarios {get; set;}
+        public DbSet<Horario> horario {get; set;}
         
         protected override void OnConfiguring(DbContextOptionsBuilder option){
             if(!option.IsConfigured){

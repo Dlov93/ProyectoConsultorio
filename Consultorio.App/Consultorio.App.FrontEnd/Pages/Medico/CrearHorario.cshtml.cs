@@ -17,6 +17,7 @@ namespace Consultorio.App.FrontEnd.Pages
         public SelectList Medicos { get; set; }
         public Horario Horario { get; set; }
         public int CedulaMedico { get; set; }
+        
         public CrearHorarioModel(IRepositorioMedico repositorioMedico,IRepositorioHorario repositorioHorario){
             this.repositorioMedico = repositorioMedico;
             this.repositorioHorario = repositorioHorario;
@@ -29,12 +30,19 @@ namespace Consultorio.App.FrontEnd.Pages
         public IActionResult OnPost(Horario Horario,string CedulaMedico){
             Medico medico = repositorioMedico.GetMedico(CedulaMedico);
             if(ModelState.IsValid){
-                repositorioHorario.AddHorario(Horario,medico.ID);
-                return RedirectToPage("./CrearHorario");
+                Horario HorarioNuevo = repositorioHorario.AddHorario(Horario, medico.ID);
+                if(HorarioNuevo != null){
+                    return RedirectToPage("./Horario");
+                }
+                else{
+                    ModelState.AddModelError(string.Empty,"El médico tiene un horario el mismo día");
+                    return Page();
+                }
             }
             else{
                 return Page();
             }
         }
+        
     }
 }
